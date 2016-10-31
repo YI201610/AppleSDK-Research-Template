@@ -98,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
-				39B4995A1DC7922C00EDACB2 /* ViewController.swift */,
-				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
-				39B4995F1DC7922C00EDACB2 /* Assets.xcassets */,
-				39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */,
-				39B499641DC7922C00EDACB2 /* Info.plist */,
+				39B499881DC7941500EDACB2 /* Model */,
+				39B499891DC7943D00EDACB2 /* View */,
+				39B499871DC7940900EDACB2 /* ViewController */,
+				39B499861DC7940100EDACB2 /* Resource */,
 			);
 			path = AppleSDKTips;
 			sourceTree = "<group>";
@@ -123,6 +122,39 @@
 				39B4997A1DC7922C00EDACB2 /* Info.plist */,
 			);
 			path = AppleSDKTipsUITests;
+			sourceTree = "<group>";
+		};
+		39B499861DC7940100EDACB2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				39B499641DC7922C00EDACB2 /* Info.plist */,
+				39B4995F1DC7922C00EDACB2 /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		39B499871DC7940900EDACB2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39B4995A1DC7922C00EDACB2 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		39B499881DC7941500EDACB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		39B499891DC7943D00EDACB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */,
+				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
