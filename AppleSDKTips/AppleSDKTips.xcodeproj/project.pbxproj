@@ -14,6 +14,8 @@
 		39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */; };
 		39B4996E1DC7922C00EDACB2 /* AppleSDKTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4996D1DC7922C00EDACB2 /* AppleSDKTipsTests.swift */; };
 		39B499791DC7922C00EDACB2 /* AppleSDKTipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499781DC7922C00EDACB2 /* AppleSDKTipsUITests.swift */; };
+		39B4998B1DC795F200EDACB2 /* TopMenuModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */; };
+		39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		39B499741DC7922C00EDACB2 /* AppleSDKTipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleSDKTipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B499781DC7922C00EDACB2 /* AppleSDKTipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSDKTipsUITests.swift; sourceTree = "<group>"; };
 		39B4997A1DC7922C00EDACB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuModelController.swift; path = ModelController/TopMenuModelController.swift; sourceTree = "<group>"; };
+		39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuEntity.swift; path = Model/TopMenuEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
-				39B499881DC7941500EDACB2 /* Model */,
+				39B4998C1DC7960000EDACB2 /* Model */,
+				39B499881DC7941500EDACB2 /* ModelController */,
 				39B499891DC7943D00EDACB2 /* View */,
 				39B499871DC7940900EDACB2 /* ViewController */,
 				39B499861DC7940100EDACB2 /* Resource */,
@@ -141,11 +146,12 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		39B499881DC7941500EDACB2 /* Model */ = {
+		39B499881DC7941500EDACB2 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */,
 			);
-			name = Model;
+			name = ModelController;
 			sourceTree = "<group>";
 		};
 		39B499891DC7943D00EDACB2 /* View */ = {
@@ -155,6 +161,14 @@
 				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		39B4998C1DC7960000EDACB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +310,8 @@
 			files = (
 				39B4995B1DC7922C00EDACB2 /* ViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
+				39B4998B1DC795F200EDACB2 /* TopMenuModelController.swift in Sources */,
+				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
