@@ -2,17 +2,24 @@
 //  TopMenuModelControllerTests.swift
 //  AppleSDKTips
 //
-//  Created by 今村裕治 on 2016/11/03.
-//  Copyright © 2016年 Yuji Imamura. All rights reserved.
 //
 
 import XCTest
 
+@testable import AppleSDKTips
+
+/**
+ TopMenuControllerのテストコード
+ */
 class TopMenuModelControllerTests: XCTestCase {
+    
+    var controller: TopMenuModelController?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        controller = TopMenuModelController(plistName: "hoge.plist")
     }
     
     override func tearDown() {

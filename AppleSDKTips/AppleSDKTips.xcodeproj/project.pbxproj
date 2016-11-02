@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -238,7 +238,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Yuji Imamura";
+				ORGANIZATIONNAME = YI201610;
 				TargetAttributes = {
 					39B499541DC7922C00EDACB2 = {
 						CreatedOnToolsVersion = 8.1;
@@ -260,7 +260,7 @@
 				};
 			};
 			buildConfigurationList = 39B499501DC7922C00EDACB2 /* Build configuration list for PBXProject "AppleSDKTips" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
