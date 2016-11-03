@@ -13,10 +13,11 @@
 		39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4995C1DC7922C00EDACB2 /* Main.storyboard */; };
 		39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B4995F1DC7922C00EDACB2 /* Assets.xcassets */; };
 		39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */; };
-		39B4996E1DC7922C00EDACB2 /* AppleSDKTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4996D1DC7922C00EDACB2 /* AppleSDKTipsTests.swift */; };
 		39B499791DC7922C00EDACB2 /* AppleSDKTipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499781DC7922C00EDACB2 /* AppleSDKTipsUITests.swift */; };
 		39B4998B1DC795F200EDACB2 /* TopMenuModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */; };
 		39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */; };
+		39B7A1901DCB706E005DB322 /* topMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39B7A18F1DCB706E005DB322 /* topMenu.plist */; };
+		39B7A1931DCB7630005DB322 /* topMenuTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39B7A1921DCB7630005DB322 /* topMenuTest.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +47,14 @@
 		39B499621DC7922C00EDACB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39B499641DC7922C00EDACB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39B499691DC7922C00EDACB2 /* AppleSDKTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleSDKTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		39B4996D1DC7922C00EDACB2 /* AppleSDKTipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSDKTipsTests.swift; sourceTree = "<group>"; };
 		39B4996F1DC7922C00EDACB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39B499741DC7922C00EDACB2 /* AppleSDKTipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleSDKTipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B499781DC7922C00EDACB2 /* AppleSDKTipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSDKTipsUITests.swift; sourceTree = "<group>"; };
 		39B4997A1DC7922C00EDACB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuModelController.swift; path = ModelController/TopMenuModelController.swift; sourceTree = "<group>"; };
 		39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuEntity.swift; path = Model/TopMenuEntity.swift; sourceTree = "<group>"; };
+		39B7A18F1DCB706E005DB322 /* topMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = topMenu.plist; path = Resoruce/topMenu.plist; sourceTree = "<group>"; };
+		39B7A1921DCB7630005DB322 /* topMenuTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = topMenuTest.plist; path = Resource/topMenuTest.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,7 @@
 		39B4996C1DC7922C00EDACB2 /* AppleSDKTipsTests */ = {
 			isa = PBXGroup;
 			children = (
-				39B4996D1DC7922C00EDACB2 /* AppleSDKTipsTests.swift */,
-				39B4996F1DC7922C00EDACB2 /* Info.plist */,
+				39B7A1911DCB75E8005DB322 /* Resource */,
 				39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */,
 			);
 			path = AppleSDKTipsTests;
@@ -135,6 +136,7 @@
 		39B499861DC7940100EDACB2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				39B7A18F1DCB706E005DB322 /* topMenu.plist */,
 				39B499641DC7922C00EDACB2 /* Info.plist */,
 				39B4995F1DC7922C00EDACB2 /* Assets.xcassets */,
 			);
@@ -172,6 +174,15 @@
 				39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		39B7A1911DCB75E8005DB322 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				39B7A1921DCB7630005DB322 /* topMenuTest.plist */,
+				39B4996F1DC7922C00EDACB2 /* Info.plist */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */,
 				39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */,
 				39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */,
+				39B7A1901DCB706E005DB322 /* topMenu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B7A1931DCB7630005DB322 /* topMenuTest.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				39A098831DCA3EE200046D54 /* TopMenuModelControllerTests.swift in Sources */,
-				39B4996E1DC7922C00EDACB2 /* AppleSDKTipsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
