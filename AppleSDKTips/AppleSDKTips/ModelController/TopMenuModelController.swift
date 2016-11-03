@@ -8,12 +8,24 @@ import UIKit
 
 class TopMenuModelController: NSObject {
 
+    //---------------------------------------------
+    // MARK: - Properties
+    
     var sectionKeyStringArray: Array<String>?
     
     var menuIndexStringArray: Array<String>?
     
     var topMenuDictionary: [String: Any]?
     
+    
+    //---------------------------------------------
+    // MARK: - Life Cycle
+    
+    /**
+     
+     # params
+     - plistName: plistのパス文字列
+     */
     init(plistName: String) {
 
         sectionKeyStringArray = []
@@ -21,6 +33,9 @@ class TopMenuModelController: NSObject {
         
     }
 
+    //---------------------------------------------
+    // MARK: - Public 
+    
     func numberOfSection() -> Int {
         return 0
     }
