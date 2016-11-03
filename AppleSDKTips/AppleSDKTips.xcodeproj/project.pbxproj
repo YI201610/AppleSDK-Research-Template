@@ -118,8 +118,8 @@
 		39B4996C1DC7922C00EDACB2 /* AppleSDKTipsTests */ = {
 			isa = PBXGroup;
 			children = (
+				39B7A1941DCB8123005DB322 /* ModelController */,
 				39B7A1911DCB75E8005DB322 /* Resource */,
-				39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */,
 			);
 			path = AppleSDKTipsTests;
 			sourceTree = "<group>";
@@ -183,6 +183,14 @@
 				39B4996F1DC7922C00EDACB2 /* Info.plist */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		39B7A1941DCB8123005DB322 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */,
+			);
+			name = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

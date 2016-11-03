@@ -8,7 +8,16 @@ import UIKit
 
 class TopMenuModelController: NSObject {
 
+    var sectionKeyStringArray: Array<String>?
+    
+    var menuIndexStringArray: Array<String>?
+    
+    var topMenuDictionary: [String: Any]?
+    
     init(plistName: String) {
+
+        sectionKeyStringArray = []
+        menuIndexStringArray = []
         
     }
 

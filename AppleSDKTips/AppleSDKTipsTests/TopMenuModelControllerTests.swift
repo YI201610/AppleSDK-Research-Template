@@ -44,32 +44,41 @@ class TopMenuModelControllerTests: XCTestCase {
         XCTAssertTrue(model.numberOfSection() > 0, "複数のセクションを持つこと")
     }
     
+    func testThatControllerCanReturnSectionKeyString() {
+
+        guard let model = controller else {
+            XCTAssert(false, "model controller作成失敗")
+            return
+        }
+
+        let numberOfSection = model.numberOfSection()
+        XCTAssertGreaterThan(numberOfSection, 0, "必ず１つ以上のセクションをもつこと");
+        
+        for index in 0..<numberOfSection {
+            let sectionNameString = model.sectionName(index: index)
+            XCTAssertNotNil(sectionNameString, "全てのセクションは名称をもつこと");
+        }
+
+    }
+
+    func testThatControllerCanReturnCountOfItemsInSection() {
+
+        guard let model = controller else {
+            XCTAssert(false, "model controller作成失敗")
+            return
+        }
+
+        let sampleSectionNameString = "www"
+        let countOfItem = model.numberOfItem(sectionName: sampleSectionNameString)
+
+        XCTAssertGreaterThanOrEqual(countOfItem, 1, "セクションが保持するアイテム数を取得することができる");
+    }
+    
+    func testThatControllerCanReturnEachSectionCount() {
+        
+    }
+    
     /*
-     - (void)testThatControllerHasMenuSpec {
-     XCTAssertTrue([modelController numberOfSection] > 0, @"複数のセクションをもつこと");
-     }
-     
-     - (void) testThatControllerCanReturnSectionKeyString
-     {
-     NSInteger countOfSection = [modelController numberOfSection];
-     XCTAssertGreaterThan(countOfSection, 0, "必ず１つ以上のセクションをもつこと");
-     
-     for(int i = 0; i < countOfSection; i++){
-     NSString* sectionNameString = [modelController sectionNameStringWithIndex:i];
-     XCTAssertNotNil(sectionNameString, @"全てのセクションは名称をもつこと");
-     }
-     }
-     
-     /*!
-     @abstract セクションが保持するアイテム数を返すメソッドがあること
-     */
-     - (void) testThatControllerCanReturnCountOfItemsInSection
-     {
-     NSString* sectionNameString = @"WWW";
-     NSInteger countOfItem = [modelController numberOfItemForSection:sectionNameString];
-     XCTAssertGreaterThanOrEqual(countOfItem, 0, @"セクションが保持するアイテム数を取得することができる");
-     }
-     
      /*!
      @abstract  全てのセクションの項目数を取得することができること
      */
@@ -101,15 +110,6 @@ class TopMenuModelControllerTests: XCTestCase {
      }
      
      }
-     
-     
-     - (void)testPerformanceExample {
-     // This is an example of a performance test case.
-     [self measureBlock:^{
-     // Put the code you want to measure the time of here.
-     }];
-     }
-     
      */
     
 }
