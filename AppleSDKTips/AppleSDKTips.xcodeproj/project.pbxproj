@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */; };
+		390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */; };
 		39A098831DCA3EE200046D54 /* TopMenuModelControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */; };
 		39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098841DCA494100046D54 /* TopMenuViewController.swift */; };
 		39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499581DC7922C00EDACB2 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDataSource.swift; path = TableViewDataSource/TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
+		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TableViewDelegate/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuModelControllerTests.swift; sourceTree = "<group>"; };
 		39A098841DCA494100046D54 /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuViewController.swift; path = ViewController/TopMenuViewController.swift; sourceTree = "<group>"; };
 		39B499551DC7922C00EDACB2 /* AppleSDKTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSDKTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390178D01DCC16EE0042D29A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
+				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		39B4994C1DC7922C00EDACB2 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +118,7 @@
 		39B499571DC7922C00EDACB2 /* AppleSDKTips */ = {
 			isa = PBXGroup;
 			children = (
-				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
+				390178D01DCC16EE0042D29A /* Delegate */,
 				39B4998C1DC7960000EDACB2 /* Model */,
 				39B499881DC7941500EDACB2 /* ModelController */,
 				39B499891DC7943D00EDACB2 /* View */,
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				39B4998A1DC795F200EDACB2 /* TopMenuModelController.swift */,
+				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
 			);
 			name = ModelController;
 			sourceTree = "<group>";
@@ -334,6 +348,8 @@
 			files = (
 				39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
+				390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */,
+				390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */,
 				39B4998B1DC795F200EDACB2 /* TopMenuModelController.swift in Sources */,
 				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
 			);
