@@ -15,6 +15,9 @@ class TopMenuModelControllerTests: XCTestCase {
     
     var controller: TopMenuModelController?
     
+    //---------------------------------
+    //Mark - Life Cycle
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -33,6 +36,9 @@ class TopMenuModelControllerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+
+    //---------------------------------
+    //Mark - 単体試験
 
     func testThatControllerHasMenuSpec() {
         
@@ -76,6 +82,10 @@ class TopMenuModelControllerTests: XCTestCase {
     
     func testThatControllerCanReturnEachSectionCount() {
         
+    }
+    
+    func testThatControllerCanReturnItemForSectionAtIndex() {
+    	
     }
     
     /*
