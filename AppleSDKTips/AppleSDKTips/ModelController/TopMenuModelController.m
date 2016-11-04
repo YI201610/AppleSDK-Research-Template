@@ -4,27 +4,16 @@
 //
 
 #import "TopMenuModelController.h"
+#import "PropertyListComponent.h"
+
+/* Swiftで実装したクラスをObj-Cから使用するための宣言 */
 #import "AppleSDKTips-Swift.h"
 
 @interface TopMenuModelController() {
-    /*!
-     @abstract
-     */
     NSMutableArray* _sectionKeyStringArray;
-    
-    /*!
-     @abstract
-     */
     NSMutableArray* _menuIndexStringArray;
-    
-    /*!
-     @abstract
-     */
     NSDictionary* _topMenuDictionary;
-    
-    /*!
-     @abstract  便宜対応
-     */
+    NSMutableArray* _topMenuArray;
     NSMutableArray* _allItemArray;
 }
 
@@ -32,69 +21,34 @@
 
 @implementation TopMenuModelController
 
+#pragma mark - Life Cycle
+
 - (instancetype)initWithPlistName:(NSString*) plistNameString
 {
     self = [super init];
     if (self) {
         
-        _sectionKeyStringArray = [[NSMutableArray alloc] init];
-        _menuIndexStringArray = [[NSMutableArray alloc] init];
-        
-        NSMutableArray* topMenuArray = [[NSMutableArray alloc] init];
-        
+        _sectionKeyStringArray = [NSMutableArray new];
+        _menuIndexStringArray = [NSMutableArray new];
+        _topMenuArray = [NSMutableArray new];
         _allItemArray = [NSMutableArray new];
         
-        NSError* errorDesc = nil;
-        if([plistNameString length] > 0)
-        {
-            NSData* plistXML = [NSData dataWithContentsOfFile:plistNameString];
-            NSPropertyListFormat format;
-            NSArray* propertyListArray = [NSPropertyListSerialization propertyListWithData:plistXML
-                                                                                   options:NSPropertyListImmutable
-                                                                                    format:&format
-                                                                                     error:&errorDesc];
-            
-            
-            //
-            if (propertyListArray) {
-                
-                NSArray* topArray = [propertyListArray firstObject];
-                
-                for (NSDictionary* themeDictionary in topArray) {
-                    NSString* themeString = [themeDictionary objectForKey:@"title"];
-                    
-                    [_sectionKeyStringArray addObject: themeString];
-                    [_menuIndexStringArray  addObject: themeString];
-                    
-                    NSArray* itemArray = [themeDictionary objectForKey:@"items"];
-                    [topMenuArray addObject: itemArray];
-                    
-                    for (NSDictionary* itemDic in itemArray) {
-                        
-                        if([itemDic isKindOfClass:[NSDictionary class]]){
-                            TopMenuEntity* entity = [TopMenuEntity new];
-                            
-                            entity = [TopMenuEntity new];
-                            entity.sectionNameString = themeString;
-                            entity.titleString = [itemDic objectForKey:@"title"];
-                            entity.viewControllerNameString = [itemDic objectForKey:@"vc"];
-                            entity.windowControllerNameString = [itemDic objectForKey:@"vc_osx"];
-                            
-                            [_allItemArray addObject:entity];
-                        }
-                    }
-                }
-                
-            }else{
-                //debugout(@"Error reading plist: %@, format: %lu", errorDesc, format);
-            }
+        if([plistNameString length] == 0) {
+            return self;
         }
         
-        _topMenuDictionary = [[NSDictionary alloc] initWithObjects:topMenuArray forKeys:_sectionKeyStringArray];
+        NSArray* plist = [PropertyListComponent propertyListArrayWithPlistPath:plistNameString];
+        
+        [self setupBufferWithSource:plist];
+        
+
+        
     }
     
     return self;
 }
+
+#pragma mark - Public
 
 - (NSString*) sectionNameStringWithIndex:(NSInteger)indexNo
 {
@@ -138,6 +92,44 @@
 {
     NSArray* itemArray = [_topMenuDictionary objectForKey:sectionNameString];
     return [itemArray count];
+}
+
+#pragma mark - Private
+
+- (void) setupBufferWithSource:(NSArray*)propertyListArray {
+    
+    if (propertyListArray.count == 0) {
+        return;
+    }
+    
+    NSArray* topArray = [propertyListArray firstObject];
+    
+    for (NSDictionary* themeDictionary in topArray) {
+        NSString* themeString = [themeDictionary objectForKey:@"title"];
+        
+        [_sectionKeyStringArray addObject: themeString];
+        [_menuIndexStringArray  addObject: themeString];
+        
+        NSArray* itemArray = [themeDictionary objectForKey:@"items"];
+        [_topMenuArray addObject: itemArray];
+        
+        for (NSDictionary* itemDic in itemArray) {
+            
+            if([itemDic isKindOfClass:[NSDictionary class]]){
+                TopMenuEntity* entity = [TopMenuEntity new];
+                
+                entity = [TopMenuEntity new];
+                entity.sectionNameString = themeString;
+                entity.titleString = [itemDic objectForKey:@"title"];
+                entity.viewControllerNameString = [itemDic objectForKey:@"vc"];
+                entity.windowControllerNameString = [itemDic objectForKey:@"vc_osx"];
+                
+                [_allItemArray addObject:entity];
+            }
+        }
+    }
+    
+    _topMenuDictionary = [[NSDictionary alloc] initWithObjects:_topMenuArray forKeys:_sectionKeyStringArray];
 }
 
 @end
