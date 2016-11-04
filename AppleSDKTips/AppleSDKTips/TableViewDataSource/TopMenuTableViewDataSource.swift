@@ -7,13 +7,21 @@ import UIKit
 
 class TopMenuTableViewDataSource: NSObject, UITableViewDataSource {
     
+    //---------------------------------------------
+    // MARK: - Properties
 
     weak var modelController: TopMenuModelController?
+    
+    //---------------------------------------------
+    // MARK: - Life Cycle
     
     init(controller: TopMenuModelController) {
         
         modelController = controller
     }
+    
+    //---------------------------------------------
+    // MARK: - TableView DataSource Delegate
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
