@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDataSource.swift; path = TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
+		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuModelControllerTests.swift; sourceTree = "<group>"; };
 		39A098841DCA494100046D54 /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
@@ -128,11 +128,10 @@
 			children = (
 				39D029131DCCCBA000ADAE35 /* Component */,
 				390178D01DCC16EE0042D29A /* Delegate */,
-				39B4998C1DC7960000EDACB2 /* Entity */,
+				39D0291E1DCD550B00ADAE35 /* Model */,
 				39B499881DC7941500EDACB2 /* ModelController */,
 				39B499861DC7940100EDACB2 /* Resource */,
-				39B499891DC7943D00EDACB2 /* Storyboard */,
-				39D029101DCCC19E00ADAE35 /* TableViewCell */,
+				39D0291F1DCD551500ADAE35 /* View */,
 				39B499871DC7940900EDACB2 /* ViewController */,
 				39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */,
 			);
@@ -233,6 +232,25 @@
 				39D029181DCCD17100ADAE35 /* PropertyListComponent.m */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		39D0291E1DCD550B00ADAE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39B4998C1DC7960000EDACB2 /* Entity */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D0291F1DCD551500ADAE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39B499891DC7943D00EDACB2 /* Storyboard */,
+				39D029101DCCC19E00ADAE35 /* TableViewCell */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
