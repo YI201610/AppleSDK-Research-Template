@@ -35,6 +35,8 @@ class TopMenuViewController: UIViewController {
 
 		/* テーブル・ビューのデータソースを生成 */        
         dataSource = TopMenuTableViewDataSource(controller: modelControllerRef)
+        
+        tableView.dataSource = dataSource
     }
     
 
