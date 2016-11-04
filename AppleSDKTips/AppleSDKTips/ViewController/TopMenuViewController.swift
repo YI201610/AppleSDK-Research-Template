@@ -24,14 +24,16 @@ class TopMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+		/* モデル・コントローラーを生成 */        
         modelController = TopMenuModelController(plistName: plistPathString())
         
         guard let modelControllerRef = modelController else {
             assert(false, "TopMenuModelControllerが作成できません")
             return
         }
-        
+
+		/* テーブル・ビューのデータソースを生成 */        
         dataSource = TopMenuTableViewDataSource(controller: modelControllerRef)
     }
     
