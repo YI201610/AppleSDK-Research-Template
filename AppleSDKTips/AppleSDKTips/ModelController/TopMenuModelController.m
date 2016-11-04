@@ -26,9 +26,7 @@
      @abstract  便宜対応
      */
     NSMutableArray* _allItemArray;
-
 }
-
 
 @end
 
@@ -39,25 +37,13 @@
     self = [super init];
     if (self) {
         
-        /*!
-         @comment   topMenu plist
-         */
         _sectionKeyStringArray = [[NSMutableArray alloc] init];
         _menuIndexStringArray = [[NSMutableArray alloc] init];
         
-        /*!
-         @comment
-         */
         NSMutableArray* topMenuArray = [[NSMutableArray alloc] init];
         
-        /*
-         @comment
-         */
         _allItemArray = [NSMutableArray new];
         
-        /*!
-         @comment
-         */
         NSError* errorDesc = nil;
         if([plistNameString length] > 0)
         {
@@ -104,9 +90,6 @@
             }
         }
         
-        /*!
-         @comment
-         */
         _topMenuDictionary = [[NSDictionary alloc] initWithObjects:topMenuArray forKeys:_sectionKeyStringArray];
     }
     

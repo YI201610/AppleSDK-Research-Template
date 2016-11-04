@@ -126,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */,
+				39B499861DC7940100EDACB2 /* Resource */,
 				39D029131DCCCBA000ADAE35 /* Component */,
 				390178D01DCC16EE0042D29A /* Delegate */,
 				39B4998C1DC7960000EDACB2 /* Model */,
@@ -133,7 +134,6 @@
 				39B499891DC7943D00EDACB2 /* Storyboard */,
 				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 				39B499871DC7940900EDACB2 /* ViewController */,
-				39B499861DC7940100EDACB2 /* Resource */,
 			);
 			path = AppleSDKTips;
 			sourceTree = "<group>";
