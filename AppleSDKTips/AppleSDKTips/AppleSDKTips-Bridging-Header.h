@@ -1,0 +1,9 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import "PropertyListComponent.h"
+#import "TopMenuModelController.h"
+
+@class PropertyListComponent;
+@class TopMenuModelController;

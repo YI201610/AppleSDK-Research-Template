@@ -8,6 +8,39 @@ import UIKit
 class TopMenuViewController: UIViewController {
 
     //---------------------------------------------
+    // MARK: - Properties
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    /** plistマスターデータのデータを供給するモデルコントローラー */
+    var modelController: TopMenuModelController?
+
+    /** テーブル・ビューのデータソース */
+    var dataSource: TopMenuTableViewDataSource?
+    
+    
+    //---------------------------------------------
+    // MARK: - Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+		/* モデル・コントローラーを生成 */        
+        modelController = TopMenuModelController(plistName: plistPathString())
+        
+        guard let modelControllerRef = modelController else {
+            assert(false, "TopMenuModelControllerが作成できません")
+            return
+        }
+
+		/* テーブル・ビューのデータソースを生成 */        
+        dataSource = TopMenuTableViewDataSource(controller: modelControllerRef)
+        
+        tableView.dataSource = dataSource
+    }
+    
+
+    //---------------------------------------------
     // MARK: - Private
     
     private func plistPathString() -> String {
@@ -22,14 +55,4 @@ class TopMenuViewController: UIViewController {
         return plistPath
     }
     
-    //---------------------------------------------
-    // MARK: - Life Cycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let plistPath = plistPathString()
-        print(plistPath)
-    }
-
 }
