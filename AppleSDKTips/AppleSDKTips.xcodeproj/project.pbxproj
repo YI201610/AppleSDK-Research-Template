@@ -129,7 +129,7 @@
 				39B499861DC7940100EDACB2 /* Resource */,
 				39D029131DCCCBA000ADAE35 /* Component */,
 				390178D01DCC16EE0042D29A /* Delegate */,
-				39B4998C1DC7960000EDACB2 /* Model */,
+				39B4998C1DC7960000EDACB2 /* Entity */,
 				39B499881DC7941500EDACB2 /* ModelController */,
 				39B499891DC7943D00EDACB2 /* Storyboard */,
 				39D029101DCCC19E00ADAE35 /* TableViewCell */,
@@ -193,12 +193,12 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
-		39B4998C1DC7960000EDACB2 /* Model */ = {
+		39B4998C1DC7960000EDACB2 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */,
 			);
-			name = Model;
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		39B7A1911DCB75E8005DB322 /* Resource */ = {
