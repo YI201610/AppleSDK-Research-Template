@@ -177,8 +177,7 @@
 		39B499881DC7941500EDACB2 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */,
-				39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */,
+				39D029211DCD56ED00ADAE35 /* TopMenu */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -239,7 +238,6 @@
 			children = (
 				39B4998C1DC7960000EDACB2 /* Entity */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -249,8 +247,17 @@
 				39B499891DC7943D00EDACB2 /* Storyboard */,
 				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		39D029211DCD56ED00ADAE35 /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */,
+				39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */,
+			);
+			name = TopMenu;
+			path = TopMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
