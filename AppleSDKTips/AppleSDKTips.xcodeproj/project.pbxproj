@@ -96,9 +96,8 @@
 		390178D01DCC16EE0042D29A /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				39D029221DCD65F800ADAE35 /* TopMenu */,
 				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
-				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
-				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -255,6 +254,15 @@
 			children = (
 				39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */,
 				39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */,
+			);
+			path = TopMenu;
+			sourceTree = "<group>";
+		};
+		39D029221DCD65F800ADAE35 /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
+				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 			);
 			name = TopMenu;
 			path = TopMenu;
