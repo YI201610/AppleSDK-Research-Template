@@ -2,4 +2,4 @@
 SDK Tips for Apple platforms.
 
 ## License
-MIT
+Apple SDK Tips is licensed under the MIT license.
