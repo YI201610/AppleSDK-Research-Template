@@ -5,6 +5,7 @@
 
 import UIKit
 
+/** TopMenu・テーブルビューのデータソース */
 class TopMenuTableViewDataSource: NSObject, UITableViewDataSource {
     
     //---------------------------------------------

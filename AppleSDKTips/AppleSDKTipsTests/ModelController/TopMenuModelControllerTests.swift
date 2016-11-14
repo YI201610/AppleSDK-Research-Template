@@ -61,21 +61,21 @@ class TopMenuModelControllerTests: XCTestCase {
         XCTAssertGreaterThan(numberOfSection, 0, "必ず１つ以上のセクションをもつこと");
         
         for index in 0..<numberOfSection {
-            let sectionNameString = model.sectionName(index: index)
+            let sectionNameString = model.sectionNameString(with: index)
             XCTAssertNotNil(sectionNameString, "全てのセクションは名称をもつこと");
         }
 
     }
 
-    func testThatControllerCanReturnCountOfItemsInSection() {
+    func testThatCozntrollerCanReturnCountOfItemsInSection() {
 
         guard let model = controller else {
             XCTAssert(false, "model controller作成失敗")
             return
         }
 
-        let sampleSectionNameString = "www"
-        let countOfItem = model.numberOfItem(sectionName: sampleSectionNameString)
+        let sampleSectionNameString = "UIKit"
+        let countOfItem = model.numberOfItem(forSection: sampleSectionNameString)
 
         XCTAssertGreaterThanOrEqual(countOfItem, 1, "セクションが保持するアイテム数を取得することができる");
     }

@@ -5,5 +5,3 @@
 #import "PropertyListComponent.h"
 #import "TopMenuModelController.h"
 
-@class PropertyListComponent;
-@class TopMenuModelController;

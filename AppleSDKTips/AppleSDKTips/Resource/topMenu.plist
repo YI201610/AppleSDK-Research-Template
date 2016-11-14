@@ -3,31 +3,19 @@
 <plist version="1.0">
 <array>
 	<array>
-
 		<dict>
 			<key>title</key>
-			<string>UIKit</string>
+			<string>LayerKit</string>
 			<key>items</key>
 			<array>
-
 				<dict>
 					<key>title</key>
-					<string>title1</string>
+					<string>contentsプロパティ</string>
 					<key>vc</key>
-					<string></string>
+					<string>LayerKit1ViewController</string>
 				</dict>
-
-				<dict>
-					<key>title</key>
-					<string>title2</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-
-
 			</array>
 		</dict>
-
 	</array>
 </array>
 </plist>

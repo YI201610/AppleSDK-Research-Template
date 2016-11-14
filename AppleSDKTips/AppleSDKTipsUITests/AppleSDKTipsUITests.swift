@@ -2,9 +2,6 @@
 //  AppleSDKTipsUITests.swift
 //  AppleSDKTipsUITests
 //
-//  Created by 今村裕治 on 2016/10/31.
-//  Copyright © 2016年 Yuji Imamura. All rights reserved.
-//
 
 import XCTest
 
