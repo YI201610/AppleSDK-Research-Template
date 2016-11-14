@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */; };
+		3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */; };
+		392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392604801DDA0D500094602F /* LayerKit1ViewController.swift */; };
 		39A098831DCA3EE200046D54 /* TopMenuModelControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */; };
 		39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098841DCA494100046D54 /* TopMenuViewController.swift */; };
 		39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499581DC7922C00EDACB2 /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
+		3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LayerKit1ViewController.storyboard; sourceTree = "<group>"; };
+		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuModelControllerTests.swift; sourceTree = "<group>"; };
 		39A098841DCA494100046D54 /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
 		39B499551DC7922C00EDACB2 /* AppleSDKTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSDKTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +129,11 @@
 		39B499571DC7922C00EDACB2 /* AppleSDKTips */ = {
 			isa = PBXGroup;
 			children = (
+				39B499861DC7940100EDACB2 /* Resource */,
 				39D029131DCCCBA000ADAE35 /* Component */,
 				390178D01DCC16EE0042D29A /* Delegate */,
 				39D0291E1DCD550B00ADAE35 /* Model */,
 				39B499881DC7941500EDACB2 /* ModelController */,
-				39B499861DC7940100EDACB2 /* Resource */,
 				39D0291F1DCD551500ADAE35 /* View */,
 				39B499871DC7940900EDACB2 /* ViewController */,
 				39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */,
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				39A098841DCA494100046D54 /* TopMenuViewController.swift */,
+				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -186,6 +191,8 @@
 			children = (
 				39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */,
 				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
+				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
+				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -220,7 +227,8 @@
 			children = (
 				39D029111DCCC22300ADAE35 /* TopMenuTableViewCell.swift */,
 			);
-			path = TableViewCell;
+			name = TableViewCell;
+			path = ../TableViewCell;
 			sourceTree = "<group>";
 		};
 		39D029131DCCCBA000ADAE35 /* Component */ = {
@@ -244,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				39B499891DC7943D00EDACB2 /* Storyboard */,
-				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,7 +271,6 @@
 				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
 				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 			);
-			name = TopMenu;
 			path = TopMenu;
 			sourceTree = "<group>";
 		};
@@ -379,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */,
 				39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */,
 				39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */,
 				39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */,
@@ -409,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D0291D1DCCD88000ADAE35 /* TopMenuModelController.m in Sources */,
+				392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */,
 				39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
 				390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */,

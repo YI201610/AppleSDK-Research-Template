@@ -38,7 +38,6 @@ class TopMenuViewController: UIViewController {
         
         tableView.dataSource = dataSource
     }
-    
 
     //---------------------------------------------
     // MARK: - Private
