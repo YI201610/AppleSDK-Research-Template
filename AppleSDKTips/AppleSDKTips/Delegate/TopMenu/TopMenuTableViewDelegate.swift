@@ -28,6 +28,10 @@ extension TopMenuViewController:  UITableViewDelegate
         guard let vcName = entityRef.viewControllerNameString else {
             return
         }
+        
+        if vcName.characters.count == 0 {
+            return
+        }
 
         guard let _ = Bundle.main.path(forResource: vcName, ofType: "storyboardc") else {
             return
