@@ -192,7 +192,6 @@
 				39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */,
 				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
 				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
-				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -227,8 +226,7 @@
 			children = (
 				39D029111DCCC22300ADAE35 /* TopMenuTableViewCell.swift */,
 			);
-			name = TableViewCell;
-			path = ../TableViewCell;
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		39D029131DCCCBA000ADAE35 /* Component */ = {
@@ -251,6 +249,7 @@
 		39D0291F1DCD551500ADAE35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 				39B499891DC7943D00EDACB2 /* Storyboard */,
 			);
 			path = View;
