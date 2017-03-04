@@ -5,6 +5,20 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>UIKit - CollectionView</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Basic - 1</string>
+					<key>vc</key>
+					<string>CollectionView1ViewController</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>title</key>
 			<string>LayerKit</string>
 			<key>items</key>
 			<array>
