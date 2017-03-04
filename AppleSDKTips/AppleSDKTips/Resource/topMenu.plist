@@ -5,6 +5,20 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>UIKit - CollectionView</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Basic - 1</string>
+					<key>vc</key>
+					<string>CollectionView1ViewController</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>title</key>
 			<string>LayerKit</string>
 			<key>items</key>
 			<array>
@@ -50,12 +64,25 @@
 					<key>vc</key>
 					<string></string>
 				</dict>
-
-
-
-
-
-
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>UIKit - NSParagraphStyle</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>lineSpacing</string>
+					<key>vc</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>minimumLineHeight/maximumLineHeight</string>
+					<key>vc</key>
+					<string></string>
+				</dict>
 			</array>
 		</dict>
 	</array>

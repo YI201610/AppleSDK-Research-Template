@@ -75,46 +75,6 @@ class TopMenuTableViewDataSource: NSObject, UITableViewDataSource {
         cellRef.titleLabel.text = cellObject?.titleString
 
         return cellRef
-        
-        /*
-         NSInteger sectionNo = indexPath.section;
-         NSInteger rowNo = indexPath.row;
-         
-         NSString *sectionName = [_dataController sectionNameStringWithIndex:sectionNo];
-         MTMTopMenuEntity* itemObj = [_dataController itemForSection:sectionName index:rowNo];
-         
-         static NSString* cellID = @"macTechnicalness";
-         UITableViewCell* cell = (UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:cellID];
-         if (cell == nil) {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-         }
-         
-         cell.textLabel.numberOfLines = 0;
-         cell.textLabel.adjustsFontSizeToFitWidth = YES;
-         cell.textLabel.text = itemObj.titleString;
-         
-         if ([itemObj.viewControllerNameString length] == 0) {
-         cell.textLabel.textColor = [UIColor lightGrayColor];
-         }
-         
-         UIStoryboard* storyboard = nil;
-         @try {
-         storyboard = [UIStoryboard storyboardWithName:itemObj.viewControllerNameString bundle: nil];
-         }
-         @catch (NSException *exception) {
-         debugout(@"exception: %@", exception);
-         }
-         
-         UIViewController* vc0 = [storyboard instantiateInitialViewController];
-         UIViewController* vc = [[NSClassFromString(itemObj.viewControllerNameString) alloc] init];
-         if(vc0 == nil && vc == nil){
-         cell.textLabel.textColor = [UIColor lightGrayColor];
-         }else{
-         cell.textLabel.textColor = [UIColor blackColor];
-         }
-         
-         return cell;
-         */
     }
 
 }
