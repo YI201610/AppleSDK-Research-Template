@@ -7,7 +7,7 @@ import UIKit
 
 
 /// コレクションビューサンプル - 1
-class CollectionView1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CollectionView1ViewController: UIViewController {
     
     //---------------------------------------------
     // MARK: - Properties
@@ -27,6 +27,18 @@ class CollectionView1ViewController: UIViewController, UICollectionViewDelegate,
     //---------------------------------------------
     // MARK: - UICollectionViewDataSource
     
+    
+    //---------------------------------------------
+    // MARK: - Button Action
+    
+    @IBAction func didSelectBackButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: {})
+    }
+
+}
+
+extension CollectionView1ViewController: UICollectionViewDataSource {
+ 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -43,19 +55,13 @@ class CollectionView1ViewController: UIViewController, UICollectionViewDelegate,
         
         return cell
     }
-    
-    //---------------------------------------------
-    // MARK: - UICollectionViewDelegate 
-    
+
+}
+
+extension CollectionView1ViewController: UICollectionViewDelegate {
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-    }
-    
-    //---------------------------------------------
-    // MARK: - Button Action
-    
-    @IBAction func didSelectBackButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: {})
     }
 
 }

@@ -28,42 +28,6 @@
 					<key>vc</key>
 					<string>LayerKit1ViewController</string>
 				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayer.contentsGravity</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayer.contentsScale</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayer.maskToBounds</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayer.contentsRect</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayer.contentsCenter</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>CALayerDelegate</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
 			</array>
 		</dict>
 		<dict>
