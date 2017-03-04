@@ -7,29 +7,53 @@ import UIKit
 
 
 /// コレクションビューサンプル - 1
-class CollectionView1ViewController: UIViewController {
+class CollectionView1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    //---------------------------------------------
+    // MARK: - Properties
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
 
+    //---------------------------------------------
+    // MARK: - Override 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //---------------------------------------------
+    // MARK: - UICollectionViewDataSource
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 39
     }
-    */
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell: CollectionView1Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionView1Cell", for: indexPath) as! CollectionView1Cell
+
+        cell.setText(message: "\(indexPath.row)")
+        
+        return cell
+    }
+    
+    //---------------------------------------------
+    // MARK: - UICollectionViewDelegate 
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    //---------------------------------------------
+    // MARK: - Button Action
+    
     @IBAction func didSelectBackButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: {})
     }
