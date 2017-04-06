@@ -10,13 +10,13 @@ import UIKit
 class CollectionView1ViewController: UIViewController {
     
     //---------------------------------------------
-    // MARK: - Properties
+    // MARK: Properties
     
     @IBOutlet weak var collectionView: UICollectionView!
     
 
     //---------------------------------------------
-    // MARK: - Override 
+    // MARK: Override
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +25,7 @@ class CollectionView1ViewController: UIViewController {
     }
     
     //---------------------------------------------
-    // MARK: - UICollectionViewDataSource
-    
-    
-    //---------------------------------------------
-    // MARK: - Button Action
+    // MARK: Button Action
     
     @IBAction func didSelectBackButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: {})
