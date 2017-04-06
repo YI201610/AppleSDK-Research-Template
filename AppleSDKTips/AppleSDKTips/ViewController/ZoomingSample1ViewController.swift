@@ -17,7 +17,7 @@ class ZoomingSample1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let imageList = ["blue120x320", "green240x120", "red240x120"]
+        let imageList = ["20150221AutoLayout", "blue120x320", "green240x120", "red240x120"]
         
         scrollView.contentSize = CGSize(width: CGFloat(Int(scrollView.frame.width)*imageList.count), height: scrollView.frame.height)
         

@@ -28,7 +28,7 @@
         <!--Zooming Sample1 View Controller-->
         <scene sceneID="pJv-o6-qJ6">
             <objects>
-                <viewController id="1cK-Ms-mRb" customClass="ZoomingSample1ViewController" customModule="AppleSDKTips" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1cK-Ms-mRb" customClass="ZoomingSample1ViewController" customModule="AppleSDKTips" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D60-ZQ-bVK"/>
                         <viewControllerLayoutGuide type="bottom" id="v9s-Cb-CTc"/>
