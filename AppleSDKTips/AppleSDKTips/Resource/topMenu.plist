@@ -3,6 +3,7 @@
 <plist version="1.0">
 <array>
 	<array>
+
 		<dict>
 			<key>title</key>
 			<string>UIKit - CollectionView</string>
@@ -19,36 +20,18 @@
 
 		<dict>
 			<key>title</key>
-			<string>LayerKit</string>
+			<string>UIKit - ScrollView</string>
 			<key>items</key>
 			<array>
 				<dict>
 					<key>title</key>
-					<string>CALayer.contents</string>
+					<string>zooming</string>
 					<key>vc</key>
-					<string>LayerKit1ViewController</string>
+					<string>ZoomingSample1ViewController</string>
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>title</key>
-			<string>UIKit - NSParagraphStyle</string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>title</key>
-					<string>lineSpacing</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>title</key>
-					<string>minimumLineHeight/maximumLineHeight</string>
-					<key>vc</key>
-					<string></string>
-				</dict>
-			</array>
-		</dict>
+
 	</array>
 </array>
 </plist>

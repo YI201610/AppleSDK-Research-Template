@@ -24,6 +24,10 @@
 		39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */; };
 		39B7A1901DCB706E005DB322 /* topMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39B7A18F1DCB706E005DB322 /* topMenu.plist */; };
 		39B7A1931DCB7630005DB322 /* topMenuTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39B7A1921DCB7630005DB322 /* topMenuTest.plist */; };
+		39BA76C11E9687AE00810E47 /* ZoomingSample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */; };
+		39BA76C31E9687F000810E47 /* ZoomingSample1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */; };
+		39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */; };
+		39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */; };
 		39D029121DCCC22300ADAE35 /* TopMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D029111DCCC22300ADAE35 /* TopMenuTableViewCell.swift */; };
 		39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D029181DCCD17100ADAE35 /* PropertyListComponent.m */; };
 		39D0291D1DCCD88000ADAE35 /* TopMenuModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */; };
@@ -47,8 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
-		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
+		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDataSource.swift; path = Delegate/TopMenu/TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
+		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TopMenu/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
 		3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LayerKit1ViewController.storyboard; sourceTree = "<group>"; };
 		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,10 @@
 		39B4998D1DC7964800EDACB2 /* TopMenuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuEntity.swift; sourceTree = "<group>"; };
 		39B7A18F1DCB706E005DB322 /* topMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = topMenu.plist; sourceTree = "<group>"; };
 		39B7A1921DCB7630005DB322 /* topMenuTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = topMenuTest.plist; sourceTree = "<group>"; };
+		39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingSample1ViewController.swift; sourceTree = "<group>"; };
+		39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZoomingSample1ViewController.storyboard; sourceTree = "<group>"; };
+		39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingSample1ScrollView.swift; sourceTree = "<group>"; };
+		39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomingSample1ScrollView.xib; sourceTree = "<group>"; };
 		39D029111DCCC22300ADAE35 /* TopMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuTableViewCell.swift; sourceTree = "<group>"; };
 		39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleSDKTips-Bridging-Header.h"; sourceTree = "<group>"; };
 		39D029171DCCD17100ADAE35 /* PropertyListComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListComponent.h; sourceTree = "<group>"; };
@@ -106,7 +114,7 @@
 		390178D01DCC16EE0042D29A /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				39D029221DCD65F800ADAE35 /* TopMenu */,
+				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
 			);
 			path = Delegate;
@@ -143,13 +151,10 @@
 		39B499571DC7922C00EDACB2 /* AppleSDKTips */ = {
 			isa = PBXGroup;
 			children = (
+				39BA76BF1E9683DC00810E47 /* DataSource */,
+				39BA76BE1E9683D500810E47 /* Domain */,
+				39BA76BD1E9683CC00810E47 /* Presentation */,
 				39B499861DC7940100EDACB2 /* Resource */,
-				39D029131DCCCBA000ADAE35 /* Component */,
-				390178D01DCC16EE0042D29A /* Delegate */,
-				39D0291E1DCD550B00ADAE35 /* Model */,
-				39B499881DC7941500EDACB2 /* ModelController */,
-				39D0291F1DCD551500ADAE35 /* View */,
-				39B499871DC7940900EDACB2 /* ViewController */,
 				39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */,
 			);
 			path = AppleSDKTips;
@@ -189,6 +194,7 @@
 				39A098841DCA494100046D54 /* TopMenuViewController.swift */,
 				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
 				3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */,
+				39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
 				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
 				3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */,
+				39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -235,6 +242,50 @@
 				39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		39BA76BD1E9683CC00810E47 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				39B499871DC7940900EDACB2 /* ViewController */,
+				39D0291F1DCD551500ADAE35 /* View */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		39BA76BE1E9683D500810E47 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				39B499881DC7941500EDACB2 /* ModelController */,
+				390178D01DCC16EE0042D29A /* Delegate */,
+				39D0291E1DCD550B00ADAE35 /* Model */,
+				39D029131DCCCBA000ADAE35 /* Component */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		39BA76BF1E9683DC00810E47 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		39BA76C41E968A7500810E47 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		39BA76C71E968DF900810E47 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */,
+			);
+			name = Xib;
 			sourceTree = "<group>";
 		};
 		39D029101DCCC19E00ADAE35 /* TableViewCell */ = {
@@ -265,6 +316,8 @@
 		39D0291F1DCD551500ADAE35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39BA76C71E968DF900810E47 /* Xib */,
+				39BA76C41E968A7500810E47 /* ScrollView */,
 				3953DB471E6B0E9E007BDD49 /* CollectionViewCell */,
 				39D029101DCCC19E00ADAE35 /* TableViewCell */,
 				39B499891DC7943D00EDACB2 /* Storyboard */,
@@ -277,15 +330,6 @@
 			children = (
 				39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */,
 				39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */,
-			);
-			path = TopMenu;
-			sourceTree = "<group>";
-		};
-		39D029221DCD65F800ADAE35 /* TopMenu */ = {
-			isa = PBXGroup;
-			children = (
-				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
-				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 			);
 			path = TopMenu;
 			sourceTree = "<group>";
@@ -403,8 +447,10 @@
 			files = (
 				3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */,
 				3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */,
+				39BA76C31E9687F000810E47 /* ZoomingSample1ViewController.storyboard in Resources */,
 				39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */,
 				39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */,
+				39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */,
 				39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */,
 				39B7A1901DCB706E005DB322 /* topMenu.plist in Resources */,
 			);
@@ -434,6 +480,8 @@
 			files = (
 				39D0291D1DCCD88000ADAE35 /* TopMenuModelController.m in Sources */,
 				3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */,
+				39BA76C11E9687AE00810E47 /* ZoomingSample1ViewController.swift in Sources */,
+				39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */,
 				392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */,
 				39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
