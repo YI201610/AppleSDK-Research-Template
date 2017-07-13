@@ -117,8 +117,6 @@
             
             if([itemDic isKindOfClass:[NSDictionary class]]){
                 TopMenuEntity* entity = [TopMenuEntity new];
-                
-                entity = [TopMenuEntity new];
                 entity.sectionNameString = themeString;
                 entity.titleString = [itemDic objectForKey:@"title"];
                 entity.viewControllerNameString = [itemDic objectForKey:@"vc"];
