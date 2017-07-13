@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */; };
+		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */; };
 		3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */; };
 		392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392604801DDA0D500094602F /* LayerKit1ViewController.swift */; };
@@ -15,7 +15,7 @@
 		3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */; };
 		3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */; };
 		39A098831DCA3EE200046D54 /* TopMenuModelControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */; };
-		39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098841DCA494100046D54 /* TopMenuViewController.swift */; };
+		39A098851DCA494100046D54 /* TopMenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098841DCA494100046D54 /* TopMenuListViewController.swift */; };
 		39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499581DC7922C00EDACB2 /* AppDelegate.swift */; };
 		39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4995C1DC7922C00EDACB2 /* Main.storyboard */; };
 		39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B4995F1DC7922C00EDACB2 /* Assets.xcassets */; };
@@ -30,7 +30,7 @@
 		39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */; };
 		39D029121DCCC22300ADAE35 /* TopMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D029111DCCC22300ADAE35 /* TopMenuTableViewCell.swift */; };
 		39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D029181DCCD17100ADAE35 /* PropertyListComponent.m */; };
-		39D0291D1DCCD88000ADAE35 /* TopMenuModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */; };
+		39D0291D1DCCD88000ADAE35 /* TopMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0291C1DCCD88000ADAE35 /* TopMenuList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDataSource.swift; path = Delegate/TopMenu/TopMenuTableViewDataSource.swift; sourceTree = "<group>"; };
+		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuListTableViewDataSource.swift; path = Delegate/TopMenu/TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TopMenu/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
 		3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LayerKit1ViewController.storyboard; sourceTree = "<group>"; };
 		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
 		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1Cell.swift; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuModelControllerTests.swift; sourceTree = "<group>"; };
-		39A098841DCA494100046D54 /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
+		39A098841DCA494100046D54 /* TopMenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewController.swift; sourceTree = "<group>"; };
 		39B499551DC7922C00EDACB2 /* AppleSDKTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSDKTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B499581DC7922C00EDACB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B4995D1DC7922C00EDACB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 		39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleSDKTips-Bridging-Header.h"; sourceTree = "<group>"; };
 		39D029171DCCD17100ADAE35 /* PropertyListComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListComponent.h; sourceTree = "<group>"; };
 		39D029181DCCD17100ADAE35 /* PropertyListComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListComponent.m; sourceTree = "<group>"; };
-		39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuModelController.h; sourceTree = "<group>"; };
-		39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuModelController.m; sourceTree = "<group>"; };
+		39D0291B1DCCD88000ADAE35 /* TopMenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuList.h; sourceTree = "<group>"; };
+		39D0291C1DCCD88000ADAE35 /* TopMenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,7 @@
 		3988CBF71F179FAD00F29FA1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				39D029131DCCCBA000ADAE35 /* Component */,
 				39BA76BF1E9683DC00810E47 /* DataSource */,
 				39BA76BE1E9683D500810E47 /* Domain */,
 				39BA76BD1E9683CC00810E47 /* Presentation */,
@@ -300,7 +301,7 @@
 		39B499871DC7940900EDACB2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				39A098841DCA494100046D54 /* TopMenuViewController.swift */,
+				39A098841DCA494100046D54 /* TopMenuListViewController.swift */,
 				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
 				3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */,
 				39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */,
@@ -358,7 +359,6 @@
 				39D029211DCD56ED00ADAE35 /* TopMenu */,
 				39B4998C1DC7960000EDACB2 /* Entity */,
 				390178D01DCC16EE0042D29A /* Delegate */,
-				39D029131DCCCBA000ADAE35 /* Component */,
 			);
 			name = Domain;
 			path = ..;
@@ -367,7 +367,7 @@
 		39BA76BF1E9683DC00810E47 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
+				390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */,
 			);
 			name = DataSource;
 			path = ..;
@@ -419,8 +419,8 @@
 		39D029211DCD56ED00ADAE35 /* TopMenu */ = {
 			isa = PBXGroup;
 			children = (
-				39D0291B1DCCD88000ADAE35 /* TopMenuModelController.h */,
-				39D0291C1DCCD88000ADAE35 /* TopMenuModelController.m */,
+				39D0291B1DCCD88000ADAE35 /* TopMenuList.h */,
+				39D0291C1DCCD88000ADAE35 /* TopMenuList.m */,
 			);
 			path = TopMenu;
 			sourceTree = "<group>";
@@ -571,14 +571,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D0291D1DCCD88000ADAE35 /* TopMenuModelController.m in Sources */,
+				39D0291D1DCCD88000ADAE35 /* TopMenuList.m in Sources */,
 				3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */,
 				39BA76C11E9687AE00810E47 /* ZoomingSample1ViewController.swift in Sources */,
 				39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */,
 				392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */,
-				39A098851DCA494100046D54 /* TopMenuViewController.swift in Sources */,
+				39A098851DCA494100046D54 /* TopMenuListViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
-				390178CD1DCC11870042D29A /* TopMenuTableViewDataSource.swift in Sources */,
+				390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */,
 				3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */,
 				390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */,
 				39D029121DCCC22300ADAE35 /* TopMenuTableViewCell.swift in Sources */,

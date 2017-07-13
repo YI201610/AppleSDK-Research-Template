@@ -5,7 +5,7 @@
 
 import UIKit
 
-class TopMenuViewController: UIViewController {
+class TopMenuListViewController: UIViewController {
 
     //---------------------------------------------
     // MARK: - Properties
@@ -13,10 +13,10 @@ class TopMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     /** plistマスターデータのデータを供給するモデルコントローラー */
-    var modelController: TopMenuModelController?
+    var modelController: TopMenuList?
 
     /** テーブル・ビューのデータソース */
-    var dataSource: TopMenuTableViewDataSource?
+    var dataSource: TopMenuListTableViewDataSource?
     
     
     //---------------------------------------------
@@ -26,15 +26,15 @@ class TopMenuViewController: UIViewController {
         super.viewDidLoad()
 
 		/* モデル・コントローラーを生成 */        
-        modelController = TopMenuModelController(plistName: plistPathString())
+        modelController = TopMenuList(plistName: plistPathString())
         
         guard let modelControllerRef = modelController else {
-            assert(false, "TopMenuModelControllerが作成できません")
+            assert(false, "TopMenuListが作成できません")
             return
         }
 
 		/* テーブル・ビューのデータソースを生成 */        
-        dataSource = TopMenuTableViewDataSource(controller: modelControllerRef)
+        dataSource = TopMenuListTableViewDataSource(controller: modelControllerRef)
         
         tableView.dataSource = dataSource
     }

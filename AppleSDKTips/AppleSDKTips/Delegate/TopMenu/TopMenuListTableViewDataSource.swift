@@ -1,22 +1,22 @@
 //
-//  TopMenuTableViewDataSource.swift
+//  TopMenuListTableViewDataSource.swift
 //  AppleSDKTips
 //
 
 import UIKit
 
 /** TopMenu・テーブルビューのデータソース */
-class TopMenuTableViewDataSource: NSObject, UITableViewDataSource {
+class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
     
     //---------------------------------------------
     // MARK: - Properties
 
-    weak var modelController: TopMenuModelController?
+    weak var modelController: TopMenuList?
     
     //---------------------------------------------
     // MARK: - Life Cycle
     
-    init(controller: TopMenuModelController) {
+    init(controller: TopMenuList) {
         
         modelController = controller
     }

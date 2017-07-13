@@ -13,7 +13,7 @@ import XCTest
  */
 class TopMenuModelControllerTests: XCTestCase {
     
-    var controller: TopMenuModelController?
+    var controller: TopMenuList?
     
     //---------------------------------
     //Mark - Life Cycle
@@ -29,7 +29,7 @@ class TopMenuModelControllerTests: XCTestCase {
             return
         }
         
-        controller = TopMenuModelController(plistName: plistName)
+        controller = TopMenuList(plistName: plistName)
     }
     
     override func tearDown() {

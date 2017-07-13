@@ -1,15 +1,15 @@
 //
-//  TopMenuModelController.m
+//  TopMenuList.m
 //  AppleSDKTips
 //
 
-#import "TopMenuModelController.h"
+#import "TopMenuList.h"
 #import "PropertyListComponent.h"
 
 /* Swiftで実装したクラスをObj-Cから使用するための宣言 */
 #import "AppleSDKTips-Swift.h"
 
-@interface TopMenuModelController() {
+@interface TopMenuList() {
     NSMutableArray* _sectionKeyStringArray;
     NSMutableArray* _menuIndexStringArray;
     NSDictionary* _topMenuDictionary;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation TopMenuModelController
+@implementation TopMenuList
 
 #pragma mark - Life Cycle
 

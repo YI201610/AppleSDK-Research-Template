@@ -3,5 +3,5 @@
 //
 
 #import "PropertyListComponent.h"
-#import "TopMenuModelController.h"
+#import "TopMenuList.h"
 

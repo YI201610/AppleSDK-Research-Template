@@ -1,5 +1,5 @@
 //
-//  TopMenuModelController.h
+//  TopMenuList.h
 //  AppleSDKTips
 //
 
@@ -7,7 +7,7 @@
 
 @class TopMenuEntity;
 
-@interface TopMenuModelController : NSObject
+@interface TopMenuList : NSObject
 
 /*!
  @abstract  topメニューのplistを読み込む
