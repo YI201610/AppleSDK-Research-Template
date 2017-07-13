@@ -13,7 +13,7 @@ class TopMenuListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     /** plistマスターデータのデータを供給するモデルコントローラー */
-    var modelController: TopMenuList?
+    var menuList: TopMenuList?
 
     /** テーブル・ビューのデータソース */
     var dataSource: TopMenuListTableViewDataSource?
@@ -25,22 +25,20 @@ class TopMenuListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		/* モデル・コントローラーを生成 */        
-        modelController = TopMenuList(plistName: plistPathString())
-        
-        guard let modelControllerRef = modelController else {
-            assert(false, "TopMenuListが作成できません")
-            return
-        }
-
-		/* テーブル・ビューのデータソースを生成 */        
-        dataSource = TopMenuListTableViewDataSource(controller: modelControllerRef)
-        
-        tableView.dataSource = dataSource
+        menuList = TopMenuList(plistName: plistPathString())
+        setupTableView()
     }
 
     //---------------------------------------------
     // MARK: - Private
+    
+    private func setupTableView() {
+        guard let sourceObject = menuList else {
+            assert(false, "TopMenuListが作成できません")
+        }
+        dataSource = TopMenuListTableViewDataSource(source: sourceObject)
+        tableView.dataSource = dataSource
+    }
     
     private func plistPathString() -> String {
         

@@ -14,7 +14,7 @@ extension TopMenuListViewController:  UITableViewDelegate
         tableView.deselectRow(at: indexPath, animated: true)
         
         
-        guard let modelRef = modelController else {
+        guard let modelRef = menuList else {
             return
         }
 

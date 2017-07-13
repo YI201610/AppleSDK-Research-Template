@@ -16,9 +16,9 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
     //---------------------------------------------
     // MARK: - Life Cycle
     
-    init(controller: TopMenuList) {
+    init(source: TopMenuList) {
         
-        modelController = controller
+        modelController = source
     }
     
     //---------------------------------------------
