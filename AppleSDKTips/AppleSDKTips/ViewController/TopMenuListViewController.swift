@@ -24,13 +24,17 @@ class TopMenuListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        menuList = TopMenuList(plistName: plistPathString())
+        
+        createMenuList()
         setupTableView()
     }
 
     //---------------------------------------------
     // MARK: - Private
+    
+    private func createMenuList(){
+        menuList = TopMenuList(plistName: plistPathString())
+    }
     
     private func setupTableView() {
         guard let sourceObject = menuList else {
