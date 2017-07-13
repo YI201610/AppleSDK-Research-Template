@@ -9,12 +9,12 @@ import UIKit
 /** Topメニューに表示する各検証項目のエンティティ */
 class TopMenuEntity: NSObject {
 
-    var sectionNameString: String?
+    @objc var sectionNameString: String?
     
-    var titleString: String?
+    @objc var titleString: String?
     
-    var viewControllerNameString: String?
+    @objc var viewControllerNameString: String?
     
-    var windowControllerNameString: String?
+    @objc var windowControllerNameString: String?
     
 }

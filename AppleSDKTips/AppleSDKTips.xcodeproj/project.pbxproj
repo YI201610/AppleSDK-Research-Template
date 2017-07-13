@@ -191,6 +191,9 @@
 		3988CBFE1F17A11400F29FA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
+				3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */,
+				39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -302,9 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				39A098841DCA494100046D54 /* TopMenuListViewController.swift */,
-				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
-				3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */,
-				39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -759,7 +759,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppleSDKTips/AppleSDKTips-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -775,7 +775,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YI201610.AppleSDKTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppleSDKTips/AppleSDKTips-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -790,7 +790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSDKTips.app/AppleSDKTips";
 			};
@@ -806,7 +806,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSDKTips.app/AppleSDKTips";
 			};
@@ -821,7 +821,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = AppleSDKTips;
 			};
@@ -836,7 +836,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = AppleSDKTips;
 			};
