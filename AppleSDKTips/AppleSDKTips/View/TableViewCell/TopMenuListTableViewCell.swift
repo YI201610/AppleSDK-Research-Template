@@ -1,11 +1,11 @@
 //
-//  TopMenuTableViewCell.swift
+//  TopMenuListTableViewCell.swift
 //  AppleSDKTips
 //
 
 import UIKit
 
-class TopMenuTableViewCell: UITableViewCell {
+class TopMenuListTableViewCell: UITableViewCell {
 
     //---------------------------------------------
     // MARK: - Properties

@@ -11,7 +11,7 @@ import XCTest
 /**
  TopMenuControllerのテストコード
  */
-class TopMenuModelControllerTests: XCTestCase {
+class TopMenuListTests: XCTestCase {
     
     var controller: TopMenuList?
     
