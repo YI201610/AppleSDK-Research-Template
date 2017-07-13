@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuListTableViewDataSource.swift; path = Delegate/TopMenu/TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
+		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TopMenu/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
 		3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LayerKit1ViewController.storyboard; sourceTree = "<group>"; };
 		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +120,33 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		3919B1021F17AFBB00E44F0F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3919B1031F17B03400E44F0F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				39D0291F1DCD551500ADAE35 /* View */,
+				39B499871DC7940900EDACB2 /* ViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3919B1041F17B06200E44F0F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				39D029211DCD56ED00ADAE35 /* TopMenu */,
+				39B4998C1DC7960000EDACB2 /* Entity */,
+				390178D01DCC16EE0042D29A /* Delegate */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		3953DB471E6B0E9E007BDD49 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				39D029131DCCCBA000ADAE35 /* Component */,
-				39BA76BF1E9683DC00810E47 /* DataSource */,
-				39BA76BE1E9683D500810E47 /* Domain */,
-				39BA76BD1E9683CC00810E47 /* Presentation */,
+				3919B1021F17AFBB00E44F0F /* DataSource */,
+				3919B1041F17B06200E44F0F /* Domain */,
+				3919B1031F17B03400E44F0F /* Presentation */,
 				39B499861DC7940100EDACB2 /* Resource */,
 			);
 			path = Framework;
@@ -341,36 +368,6 @@
 				39A098821DCA3EE200046D54 /* TopMenuListTests.swift */,
 			);
 			path = ModelController;
-			sourceTree = "<group>";
-		};
-		39BA76BD1E9683CC00810E47 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				39B499871DC7940900EDACB2 /* ViewController */,
-				39D0291F1DCD551500ADAE35 /* View */,
-			);
-			name = Presentation;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		39BA76BE1E9683D500810E47 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				39D029211DCD56ED00ADAE35 /* TopMenu */,
-				39B4998C1DC7960000EDACB2 /* Entity */,
-				390178D01DCC16EE0042D29A /* Delegate */,
-			);
-			name = Domain;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		39BA76BF1E9683DC00810E47 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */,
-			);
-			name = DataSource;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		39BA76C41E968A7500810E47 /* ScrollView */ = {
