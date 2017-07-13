@@ -182,6 +182,7 @@
 		3988CBF91F17A00D00F29FA1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				39B4995F1DC7922C00EDACB2 /* Assets.xcassets */,
 				39B7A18F1DCB706E005DB322 /* topMenu.plist */,
 			);
 			path = Resource;
@@ -324,7 +325,6 @@
 		39B499861DC7940100EDACB2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				39B4995F1DC7922C00EDACB2 /* Assets.xcassets */,
 				39B499641DC7922C00EDACB2 /* Info.plist */,
 			);
 			path = Resource;
