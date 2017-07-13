@@ -128,6 +128,64 @@
 			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		3988CBF71F179FAD00F29FA1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76BF1E9683DC00810E47 /* DataSource */,
+				39BA76BE1E9683D500810E47 /* Domain */,
+				39BA76BD1E9683CC00810E47 /* Presentation */,
+				39B499861DC7940100EDACB2 /* Resource */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		3988CBF81F179FB500F29FA1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3988CBFD1F17A03200F29FA1 /* Component */,
+				3988CBFC1F17A02100F29FA1 /* DataSource */,
+				3988CBFB1F17A01D00F29FA1 /* Domain */,
+				3988CBFA1F17A01800F29FA1 /* Presentation */,
+				3988CBF91F17A00D00F29FA1 /* Resource */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3988CBF91F17A00D00F29FA1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3988CBFA1F17A01800F29FA1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3988CBFB1F17A01D00F29FA1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3988CBFC1F17A02100F29FA1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3988CBFD1F17A03200F29FA1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		39B4994C1DC7922C00EDACB2 = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +209,8 @@
 		39B499571DC7922C00EDACB2 /* AppleSDKTips */ = {
 			isa = PBXGroup;
 			children = (
-				39BA76BF1E9683DC00810E47 /* DataSource */,
-				39BA76BE1E9683D500810E47 /* Domain */,
-				39BA76BD1E9683CC00810E47 /* Presentation */,
-				39B499861DC7940100EDACB2 /* Resource */,
+				3988CBF71F179FAD00F29FA1 /* Framework */,
+				3988CBF81F179FB500F29FA1 /* Application */,
 				39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */,
 			);
 			path = AppleSDKTips;
@@ -251,6 +307,7 @@
 				39D0291F1DCD551500ADAE35 /* View */,
 			);
 			name = Presentation;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		39BA76BE1E9683D500810E47 /* Domain */ = {
@@ -262,6 +319,7 @@
 				39D029131DCCCBA000ADAE35 /* Component */,
 			);
 			name = Domain;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		39BA76BF1E9683DC00810E47 /* DataSource */ = {
@@ -270,6 +328,7 @@
 				390178CC1DCC11870042D29A /* TopMenuTableViewDataSource.swift */,
 			);
 			name = DataSource;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		39BA76C41E968A7500810E47 /* ScrollView */ = {
@@ -646,7 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KCQC4QP985;
-				INFOPLIST_FILE = AppleSDKTips/Resource/Info.plist;
+				INFOPLIST_FILE = AppleSDKTips/Framework/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YI201610.AppleSDKTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,7 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KCQC4QP985;
-				INFOPLIST_FILE = AppleSDKTips/Resource/Info.plist;
+				INFOPLIST_FILE = AppleSDKTips/Framework/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YI201610.AppleSDKTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
