@@ -57,7 +57,7 @@
 		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
 		3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
-		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionView1Cell.swift; path = CollectionViewCell/CollectionView1Cell.swift; sourceTree = "<group>"; };
+		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1Cell.swift; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuModelControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuModelControllerTests.swift; sourceTree = "<group>"; };
 		39A098841DCA494100046D54 /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
 		39B499551DC7922C00EDACB2 /* AppleSDKTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSDKTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +123,6 @@
 		3953DB471E6B0E9E007BDD49 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */,
 			);
 			name = CollectionViewCell;
 			sourceTree = "<group>";
@@ -161,6 +160,8 @@
 		3988CBFA1F17A01800F29FA1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3988CC031F17A17C00F29FA1 /* View */,
+				3988CBFE1F17A11400F29FA1 /* ViewController */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -184,6 +185,58 @@
 			children = (
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		3988CBFE1F17A11400F29FA1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3988CBFF1F17A11F00F29FA1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */,
+				3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */,
+				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3988CC001F17A13A00F29FA1 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3988CC011F17A14000F29FA1 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		3988CC021F17A14600F29FA1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		3988CC031F17A17C00F29FA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3988CC021F17A14600F29FA1 /* CollectionViewCell */,
+				3988CC011F17A14000F29FA1 /* ScrollView */,
+				3988CC001F17A13A00F29FA1 /* Xib */,
+				3988CBFF1F17A11F00F29FA1 /* Storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		39B4994C1DC7922C00EDACB2 = {
@@ -255,22 +308,11 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		39B499881DC7941500EDACB2 /* ModelController */ = {
-			isa = PBXGroup;
-			children = (
-				39D029211DCD56ED00ADAE35 /* TopMenu */,
-			);
-			path = ModelController;
-			sourceTree = "<group>";
-		};
 		39B499891DC7943D00EDACB2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				39B499611DC7922C00EDACB2 /* LaunchScreen.storyboard */,
 				39B4995C1DC7922C00EDACB2 /* Main.storyboard */,
-				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
-				3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */,
-				39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -313,9 +355,9 @@
 		39BA76BE1E9683D500810E47 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				39B499881DC7941500EDACB2 /* ModelController */,
+				39D029211DCD56ED00ADAE35 /* TopMenu */,
+				39B4998C1DC7960000EDACB2 /* Entity */,
 				390178D01DCC16EE0042D29A /* Delegate */,
-				39D0291E1DCD550B00ADAE35 /* Model */,
 				39D029131DCCCBA000ADAE35 /* Component */,
 			);
 			name = Domain;
@@ -334,7 +376,6 @@
 		39BA76C41E968A7500810E47 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */,
 			);
 			name = ScrollView;
 			sourceTree = "<group>";
@@ -342,7 +383,6 @@
 		39BA76C71E968DF900810E47 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -362,14 +402,6 @@
 				39D029181DCCD17100ADAE35 /* PropertyListComponent.m */,
 			);
 			path = Component;
-			sourceTree = "<group>";
-		};
-		39D0291E1DCD550B00ADAE35 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				39B4998C1DC7960000EDACB2 /* Entity */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		39D0291F1DCD551500ADAE35 /* View */ = {
@@ -456,24 +488,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = YI201610;
 				TargetAttributes = {
 					39B499541DC7922C00EDACB2 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KCQC4QP985;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					39B499681DC7922C00EDACB2 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KCQC4QP985;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 39B499541DC7922C00EDACB2;
 					};
 					39B499731DC7922C00EDACB2 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KCQC4QP985;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 39B499541DC7922C00EDACB2;
 					};
@@ -615,7 +649,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -623,7 +659,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -665,7 +706,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -673,7 +716,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -711,7 +759,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppleSDKTips/AppleSDKTips-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -726,7 +775,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YI201610.AppleSDKTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppleSDKTips/AppleSDKTips-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -740,7 +790,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSDKTips.app/AppleSDKTips";
 			};
 			name = Debug;
@@ -755,7 +806,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSDKTips.app/AppleSDKTips";
 			};
 			name = Release;
@@ -769,7 +821,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = AppleSDKTips;
 			};
 			name = Debug;
@@ -783,7 +836,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imarketsceneviewer.AppleSDKTipsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = AppleSDKTips;
 			};
 			name = Release;
