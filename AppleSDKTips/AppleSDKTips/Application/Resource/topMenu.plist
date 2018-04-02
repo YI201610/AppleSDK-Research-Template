@@ -6,6 +6,20 @@
 
 		<dict>
 			<key>title</key>
+			<string>UIKit - iPhone X</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>下からカスタム</string>
+					<key>vc</key>
+					<string>Verification20180403ViewController</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>title</key>
 			<string>UIKit - CollectionView</string>
 			<key>items</key>
 			<array>
