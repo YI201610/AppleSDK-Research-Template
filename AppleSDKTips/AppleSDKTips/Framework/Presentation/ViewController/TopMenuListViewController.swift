@@ -30,6 +30,14 @@ class TopMenuListViewController: UIViewController {
     }
 
     //---------------------------------------------
+    // MARK: - Public
+    
+    @IBAction func backToTop(_ sender: UIStoryboardSegue) {
+        
+    }
+
+    
+    //---------------------------------------------
     // MARK: - Private
     
     private func createMenuList(){
