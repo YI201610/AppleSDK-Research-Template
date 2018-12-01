@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
-		390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */; };
+		390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */; };
 		390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */; };
 		3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */; };
 		3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */; };
@@ -51,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
-		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TopMenu/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
+		390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewControllerUITableViewDelegate.swift; sourceTree = "<group>"; };
 		390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Verification20180403TempView.xib; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
 		3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +113,6 @@
 		390178D01DCC16EE0042D29A /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */,
 				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
 			);
 			path = Delegate;
@@ -307,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				39A098841DCA494100046D54 /* TopMenuListViewController.swift */,
+				390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -550,7 +550,7 @@
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
 				390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */,
 				3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */,
-				390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */,
+				390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */,
 				39D029121DCCC22300ADAE35 /* TopMenuListTableViewCell.swift in Sources */,
 				39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */,
 				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
