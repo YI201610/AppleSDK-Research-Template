@@ -5,7 +5,7 @@
 
 import UIKit
 
-/** TopMenu・テーブルビューのデータソース */
+/// TopMenu・テーブルビューのデータソース
 class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
     
     //---------------------------------------------
@@ -22,7 +22,7 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     //---------------------------------------------
-    // MARK: - TableView DataSource Delegate
+    // MARK: - UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
