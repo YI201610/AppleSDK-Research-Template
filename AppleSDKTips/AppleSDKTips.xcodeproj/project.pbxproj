@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */; };
-		390B546A2072BD82009CBD24 /* Verification20180403ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390B54692072BD82009CBD24 /* Verification20180403ViewController.swift */; };
 		390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */; };
-		390B546E2072BEF0009CBD24 /* Verification20180403ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390B546D2072BEF0009CBD24 /* Verification20180403ViewController.storyboard */; };
 		3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */; };
 		392604811DDA0D500094602F /* LayerKit1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392604801DDA0D500094602F /* LayerKit1ViewController.swift */; };
 		3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */; };
@@ -56,9 +54,7 @@
 /* Begin PBXFileReference section */
 		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopMenuTableViewDelegate.swift; path = TopMenu/TopMenuTableViewDelegate.swift; sourceTree = "<group>"; };
-		390B54692072BD82009CBD24 /* Verification20180403ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification20180403ViewController.swift; sourceTree = "<group>"; };
 		390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Verification20180403TempView.xib; sourceTree = "<group>"; };
-		390B546D2072BEF0009CBD24 /* Verification20180403ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification20180403ViewController.storyboard; sourceTree = "<group>"; };
 		3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LayerKit1ViewController.storyboard; sourceTree = "<group>"; };
 		392604801DDA0D500094602F /* LayerKit1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerKit1ViewController.swift; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
@@ -230,7 +226,6 @@
 				392604801DDA0D500094602F /* LayerKit1ViewController.swift */,
 				3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */,
 				39BA76C01E9687AE00810E47 /* ZoomingSample1ViewController.swift */,
-				390B54692072BD82009CBD24 /* Verification20180403ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -241,7 +236,6 @@
 				39BA76C21E9687F000810E47 /* ZoomingSample1ViewController.storyboard */,
 				3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */,
 				3926047E1DD9F6CA0094602F /* LayerKit1ViewController.storyboard */,
-				390B546D2072BEF0009CBD24 /* Verification20180403ViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -549,7 +543,6 @@
 				3926047F1DD9F6CA0094602F /* LayerKit1ViewController.storyboard in Resources */,
 				39BA76C31E9687F000810E47 /* ZoomingSample1ViewController.storyboard in Resources */,
 				39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */,
-				390B546E2072BEF0009CBD24 /* Verification20180403ViewController.storyboard in Resources */,
 				39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */,
 				390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */,
 				39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */,
@@ -581,7 +574,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D0291D1DCCD88000ADAE35 /* TopMenuList.m in Sources */,
-				390B546A2072BD82009CBD24 /* Verification20180403ViewController.swift in Sources */,
 				3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */,
 				39BA76C11E9687AE00810E47 /* ZoomingSample1ViewController.swift in Sources */,
 				39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */,
