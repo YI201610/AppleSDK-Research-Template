@@ -62,7 +62,7 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
         
         let sectionName = ref.sectionNameString(with: sectionNo)
         
-        let cellObject = ref.item(forSection: sectionName, index: rowNo)
+        let topMenu = ref.item(forSection: sectionName, index: rowNo)
 
         var cell = tableView.dequeueReusableCell(withIdentifier: TopMenuListTableViewCell.cellIdentifier())
         if cell == nil {
@@ -72,9 +72,49 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
         guard let cellRef: TopMenuListTableViewCell = cell as! TopMenuListTableViewCell? else {
             return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
         }
-        cellRef.titleLabel.text = cellObject?.titleString
+        cellRef.titleLabel.text = topMenu?.titleString
 
+        if TopMenuListTableViewDataSource.isValidTopMenu(entity: topMenu) {
+            cellRef.titleLabel.textColor = UIColor.blue
+        }else {
+            cellRef.titleLabel.textColor = UIColor.lightGray
+        }
+        
         return cellRef
+    }
+
+    //---------------------------------------------
+    // MARK: - Private
+
+    
+    /// 選択可能なTopMenuかを判定
+    ///
+    /// - Parameter entity: TopMenuインスタンス
+    /// - Returns: true: 選択可能, false: 無効
+    class func isValidTopMenu(entity: TopMenuEntity?) -> Bool {
+        
+        /* 名前があるか */
+        guard let vcName = entity?.viewControllerNameString else {
+            return false
+        }
+        
+        /* 十分な長さか */
+        if vcName.utf8.count == 0 {
+            return false
+        }
+        
+        /* ViewControllerに対応するStoryboardファイルがリソースに存在するか */
+        guard let _ = Bundle.main.path(forResource: vcName, ofType: "storyboardc") else {
+            return false
+        }
+
+        /* Storyboardから最初のViewControllerを作成することができるか */
+        let storyboard = UIStoryboard(name: vcName, bundle: nil)
+        guard storyboard.instantiateInitialViewController() != nil else {
+            return false
+        }
+        
+        return true
     }
 
 }

@@ -110,14 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		390178D01DCC16EE0042D29A /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
 		3919B1021F17AFBB00E44F0F /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +132,16 @@
 			children = (
 				39D029211DCD56ED00ADAE35 /* TopMenu */,
 				39B4998C1DC7960000EDACB2 /* Entity */,
-				390178D01DCC16EE0042D29A /* Delegate */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		391C25AC21D526E000A9A631 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				39B499581DC7922C00EDACB2 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		3953DB471E6B0E9E007BDD49 /* CollectionViewCell */ = {
@@ -155,6 +154,7 @@
 		3988CBF71F179FAD00F29FA1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				391C25AC21D526E000A9A631 /* Application */,
 				39D029131DCCCBA000ADAE35 /* Component */,
 				3919B1021F17AFBB00E44F0F /* DataSource */,
 				3919B1041F17B06200E44F0F /* Domain */,

@@ -31,7 +31,7 @@ extension TopMenuListViewController:  UITableViewDelegate
             return
         }
         
-        if vcName.characters.count == 0 {
+        if vcName.utf8.count == 0 {
             return
         }
 
