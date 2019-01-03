@@ -26,14 +26,27 @@
             </objects>
             <point key="canvasLocation" x="-623" y="167"/>
         </scene>
-        <!--View Controller-->
+        <!--Basic Playback View Controller-->
         <scene sceneID="Xnh-8T-WCW">
             <objects>
-                <viewController id="3un-Es-7A1" sceneMemberID="viewController">
+                <viewController id="3un-Es-7A1" customClass="BasicPlaybackViewController" customModule="AppleSDKTips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NnD-Gb-6Y1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-lx-0DE">
+                                <rect key="frame" x="151.5" y="318.5" width="72" height="30"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="didSelectPlayVideoButton:" destination="3un-Es-7A1" eventType="touchUpInside" id="EKd-Nk-Hr4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YQv-lx-0DE" firstAttribute="centerX" secondItem="NnD-Gb-6Y1" secondAttribute="centerX" id="AVl-Di-qm8"/>
+                            <constraint firstItem="YQv-lx-0DE" firstAttribute="centerY" secondItem="NnD-Gb-6Y1" secondAttribute="centerY" id="qnQ-Rh-f6G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8hd-h6-2gP"/>
                     </view>
                     <navigationItem key="navigationItem" id="z1q-ya-K6J">
@@ -47,7 +60,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5I-xN-PIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="i6F-XH-xEA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="270" y="167"/>
+            <point key="canvasLocation" x="269.60000000000002" y="166.8665667166417"/>
         </scene>
     </scenes>
 </document>

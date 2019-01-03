@@ -10,9 +10,9 @@
 		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */; };
 		390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */; };
-		394F21B121DDF435003F1E88 /* BasicPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394F21B021DDF435003F1E88 /* BasicPlaybackViewController.m */; };
 		394F21B321DDF445003F1E88 /* BasicPlaybackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */; };
 		394F21B521DDF553003F1E88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B421DDF553003F1E88 /* README.md */; };
+		394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */; };
 		3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */; };
 		3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */; };
 		3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */; };
@@ -56,10 +56,9 @@
 		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewControllerUITableViewDelegate.swift; sourceTree = "<group>"; };
 		390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Verification20180403TempView.xib; sourceTree = "<group>"; };
-		394F21AF21DDF435003F1E88 /* BasicPlaybackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicPlaybackViewController.h; sourceTree = "<group>"; };
-		394F21B021DDF435003F1E88 /* BasicPlaybackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicPlaybackViewController.m; sourceTree = "<group>"; };
 		394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicPlaybackViewController.storyboard; sourceTree = "<group>"; };
 		394F21B421DDF553003F1E88 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackViewController.swift; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
 		3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
 		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1Cell.swift; sourceTree = "<group>"; };
@@ -162,8 +161,7 @@
 		394F21AE21DDF418003F1E88 /* BasicPlayback */ = {
 			isa = PBXGroup;
 			children = (
-				394F21AF21DDF435003F1E88 /* BasicPlaybackViewController.h */,
-				394F21B021DDF435003F1E88 /* BasicPlaybackViewController.m */,
+				394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */,
 				394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */,
 				394F21B421DDF553003F1E88 /* README.md */,
 			);
@@ -577,11 +575,11 @@
 				39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */,
 				39A098851DCA494100046D54 /* TopMenuListViewController.swift in Sources */,
 				39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */,
-				394F21B121DDF435003F1E88 /* BasicPlaybackViewController.m in Sources */,
 				390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */,
 				3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */,
 				390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */,
 				39D029121DCCC22300ADAE35 /* TopMenuListTableViewCell.swift in Sources */,
+				394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */,
 				39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */,
 				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
 			);
