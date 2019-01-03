@@ -25,7 +25,9 @@ class BasicPlaybackViewController: UIViewController {
     
     @IBAction func didSelectPlayVideoButton(_ sender: UIButton) {
         
+        //鳥のflutterが観れるサンプル
         let urlString = "https://devimages-cdn.apple.com/samplecode/avfoundationMedia/AVFoundationQueuePlayer_HLS2/master.m3u8"
+
         playSampleMediaInAVPlayerViewControllerWithMediaSourceURLSTring(urlString: urlString)
         
     }
