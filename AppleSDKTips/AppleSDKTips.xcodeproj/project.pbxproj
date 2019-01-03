@@ -161,11 +161,20 @@
 		394F21AE21DDF418003F1E88 /* BasicPlayback */ = {
 			isa = PBXGroup;
 			children = (
+				394F21B421DDF553003F1E88 /* README.md */,
 				394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */,
 				394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */,
-				394F21B421DDF553003F1E88 /* README.md */,
 			);
 			path = BasicPlayback;
+			sourceTree = "<group>";
+		};
+		394F21B821DE040B003F1E88 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3988CC031F17A17C00F29FA1 /* View */,
+				3988CBFE1F17A11400F29FA1 /* ViewController */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		3953DB471E6B0E9E007BDD49 /* CollectionViewCell */ = {
@@ -210,8 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				394F21AD21DDF40D003F1E88 /* AVFoundation */,
-				3988CC031F17A17C00F29FA1 /* View */,
-				3988CBFE1F17A11400F29FA1 /* ViewController */,
+				394F21B821DE040B003F1E88 /* UIKit */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
