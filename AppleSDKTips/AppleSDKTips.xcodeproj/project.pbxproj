@@ -10,6 +10,9 @@
 		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */; };
 		390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */; };
+		394F21B321DDF445003F1E88 /* BasicPlaybackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */; };
+		394F21B521DDF553003F1E88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B421DDF553003F1E88 /* README.md */; };
+		394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */; };
 		3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */; };
 		3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */; };
 		3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */; };
@@ -53,6 +56,9 @@
 		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewControllerUITableViewDelegate.swift; sourceTree = "<group>"; };
 		390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Verification20180403TempView.xib; sourceTree = "<group>"; };
+		394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicPlaybackViewController.storyboard; sourceTree = "<group>"; };
+		394F21B421DDF553003F1E88 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackViewController.swift; sourceTree = "<group>"; };
 		3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView1ViewController.storyboard; sourceTree = "<group>"; };
 		3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1ViewController.swift; sourceTree = "<group>"; };
 		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1Cell.swift; sourceTree = "<group>"; };
@@ -144,6 +150,24 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		394F21AD21DDF40D003F1E88 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				394F21AE21DDF418003F1E88 /* BasicPlayback */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		394F21AE21DDF418003F1E88 /* BasicPlayback */ = {
+			isa = PBXGroup;
+			children = (
+				394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */,
+				394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */,
+				394F21B421DDF553003F1E88 /* README.md */,
+			);
+			path = BasicPlayback;
+			sourceTree = "<group>";
+		};
 		3953DB471E6B0E9E007BDD49 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +209,7 @@
 		3988CBFA1F17A01800F29FA1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				394F21AD21DDF40D003F1E88 /* AVFoundation */,
 				3988CC031F17A17C00F29FA1 /* View */,
 				3988CBFE1F17A11400F29FA1 /* ViewController */,
 			);
@@ -511,12 +536,14 @@
 			files = (
 				3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */,
 				39BA76C31E9687F000810E47 /* ZoomingSample1ViewController.storyboard in Resources */,
+				394F21B521DDF553003F1E88 /* README.md in Resources */,
 				39B499631DC7922C00EDACB2 /* LaunchScreen.storyboard in Resources */,
 				39B499601DC7922C00EDACB2 /* Assets.xcassets in Resources */,
 				390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */,
 				39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */,
 				39B4995E1DC7922C00EDACB2 /* Main.storyboard in Resources */,
 				39B7A1901DCB706E005DB322 /* topMenu.plist in Resources */,
+				394F21B321DDF445003F1E88 /* BasicPlaybackViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +579,7 @@
 				3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */,
 				390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */,
 				39D029121DCCC22300ADAE35 /* TopMenuListTableViewCell.swift in Sources */,
+				394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */,
 				39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */,
 				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
 			);

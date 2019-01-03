@@ -6,6 +6,21 @@
 
 		<dict>
 			<key>title</key>
+			<string>AV Foundation</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Building a Basic Playback</string>
+					<key>vc</key>
+					<string>BasicPlaybackViewController</string>
+				</dict>
+			</array>
+		</dict>
+
+
+		<dict>
+			<key>title</key>
 			<string>UIKit - CollectionView</string>
 			<key>items</key>
 			<array>
