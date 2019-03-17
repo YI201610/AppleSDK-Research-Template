@@ -58,7 +58,10 @@ AppleのSDKを検証する時に使える、雛形のプロジェクトです。
 
 4. 「2.」で追加したvcと全く同名のStoryboardをプロジェクトに追加する。
   - そのStoryboardに、NavigationControllerと、rootViewControllerを追加する。
+
     - NavigationControllerの `Is Initial View Controller` のチェックボックスをONにする。
+	  - ![check - is initial view controller](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/4.png)
+
     - rootViewControllerに、「2.」で追加したvcを設定する。
     - rootViewControllerに、BarButtonItemを追加する。テキスト文字を「戻る」と入力する。
 	  - BarButtonItemを「Exit」に接続し、Unwind Segueの「backToTop」にを選択する。
