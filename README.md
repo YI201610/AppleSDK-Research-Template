@@ -46,6 +46,7 @@ AppleのSDKを検証する時に使える、雛形のプロジェクトです。
 2. `src/AppleSDKTips/Application/Resource/topMenu.plist` をテキストエディタで編集し、新しい検証項目を追加する。
   - 各項目は、 `title` と `vc` (ViewController) から構成する。
     - 次の例では、 titleに「サンプルタイトル1」、 vcに「SampleViewController」を指定している。
+	   - ![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/2.png)
 
 ```
 <key>title</key>
@@ -65,7 +66,8 @@ AppleのSDKを検証する時に使える、雛形のプロジェクトです。
     - rootViewControllerに、「2.」で追加したvcを設定する。
     - rootViewControllerに、BarButtonItemを追加する。テキスト文字を「戻る」と入力する。
 	  - BarButtonItemを「Exit」に接続し、Unwind Segueの「backToTop」にを選択する。
-
+	     - ![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/1.png)
+	     - ![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/3.png)
 
 5. アプリを起動し、検証項目を選択する
   - 「4.」で追加したStoryboardを経て、「3.」で追加したViewControllerが表示されることを確認する。
