@@ -2,7 +2,7 @@
 
 AppleのSDKを検証する時に使える、雛形のプロジェクトです。
 	   
-![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/sim1.png)
+![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/sim2.png)
 
 ## 目的
 
