@@ -45,7 +45,7 @@ AppleのSDKを検証する時に使える、雛形のプロジェクトです。
 
 2. `src/AppleSDKTips/Application/Resource/topMenu.plist` をテキストエディタで編集し、新しい検証項目を追加する。
   - 各項目は、 `title` と `vc` (ViewController) から構成する。
-    - 次の例では、 titleに「サンプルタイトル1」、 vcに「SampleViewController」を指定している。
+    - 次の例では、 titleに「検証項目1」、 vcに「SampleViewController」を指定している。
 	   - ![connect to exit](https://github.com/YI201610/AppleSDK-Research-Template/blob/develop/images/2.png)
 
 ```
