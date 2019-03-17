@@ -1,5 +1,12 @@
-# Apple SDK Tips
-SDK Tips for Apple platforms.
+# Apple SDK Research Template
+
+AppleのSDKを検証する時に使える、雛形のプロジェクトです。
+
+## プロジェクト構成の概要
+
+
+
+
 
 ## License
-Apple SDK Tips is licensed under the MIT license.
+AppleSDK-Research-Template is licensed under the MIT license.
