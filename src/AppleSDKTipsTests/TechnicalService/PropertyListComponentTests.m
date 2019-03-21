@@ -26,9 +26,15 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+/**
+ plistを読み取ることができる
+ */
+- (void)testComponentCanReadPlist {
+
+     NSString* path = [[NSBundle mainBundle] pathForResource:@"topMenu" ofType:@"plist"];
+    id plist = [PropertyListComponent propertyListArrayWithPlistPath:path];
+    XCTAssertNotNil(plist, @"plistが取得できない");
 }
 
 - (void)testPerformanceExample {
