@@ -11,6 +11,8 @@
 @interface PropertyListComponentTests : XCTestCase {
 
     PropertyListComponent *_component;
+    
+    NSString *_plistPath;
 }
 
 @end
@@ -18,8 +20,10 @@
 @implementation PropertyListComponentTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
     _component = [PropertyListComponent new];
+    
+    _plistPath = [[NSBundle mainBundle] pathForResource:@"topMenu" ofType:@"plist"];
+
 }
 
 - (void)tearDown {
@@ -32,9 +36,41 @@
  */
 - (void)testComponentCanReadPlist {
 
-     NSString* path = [[NSBundle mainBundle] pathForResource:@"topMenu" ofType:@"plist"];
-    id plist = [PropertyListComponent propertyListArrayWithPlistPath:path];
+    id plist = [PropertyListComponent propertyListArrayWithPlistPath:_plistPath];
     XCTAssertNotNil(plist, @"plistが取得できない");
+}
+
+
+/**
+ plistを書き込むことができる
+ */
+- (void)testComponentCanWritePlist {
+    
+    XCTAssertTrue(NO, @"plistを書き込むことができない");
+}
+
+/**
+ plistを、/Library/Application Support/ 配下に新規に保存することができる
+ */
+- (void)testComponentCanWritePlistToApplicationSupportDirectory {
+    
+    XCTAssertTrue(NO, @"plistをApplicationSupportに書き込むことができない");
+}
+
+/**
+ plistを、/Library/Caches/ 配下に新規に保存することができる
+ */
+- (void)testComponentCanWritePlistToCachesDirectory {
+    
+    XCTAssertTrue(NO, @"plistをCaches書き込むことができない");
+}
+
+/**
+ plistを、Documents 配下に新規に保存することができる
+ */
+- (void)testComponentCanWritePlistToDocumentsDirectory {
+    
+    XCTAssertTrue(NO, @"plistをDocuments書き込むことができない");
 }
 
 - (void)testPerformanceExample {
