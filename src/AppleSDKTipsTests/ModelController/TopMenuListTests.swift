@@ -6,7 +6,8 @@
 
 import XCTest
 
-@testable import AppleSDKTips
+
+//import AppleSDKTips
 
 /**
  TopMenuControllerのテストコード
