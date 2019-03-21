@@ -13,17 +13,9 @@
         return nil;
     }
     
-    NSData* plistXML = [NSData dataWithContentsOfFile:plistPathString];
-    
-    NSPropertyListFormat format;
-    NSError* errorDesc = nil;
-    
-    NSArray* propertyListArray = [NSPropertyListSerialization propertyListWithData:plistXML
-                                                                           options:NSPropertyListImmutable
-                                                                            format:&format   error:&errorDesc];
-
-    if(propertyListArray.count > 0) {
-        return propertyListArray;
+    NSArray* plistArray = [NSArray arrayWithContentsOfFile:plistPathString];
+    if(plistArray.count > 0) {
+        return plistArray;
     }
 
     return nil;
