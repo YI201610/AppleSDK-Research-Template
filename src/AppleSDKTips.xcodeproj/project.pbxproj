@@ -10,13 +10,14 @@
 		390178CD1DCC11870042D29A /* TopMenuListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */; };
 		390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */; };
 		390B546C2072BE59009CBD24 /* Verification20180403TempView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */; };
+		3919785F2244B04F006A3BFD /* PropertyListComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3919785E2244B04F006A3BFD /* PropertyListComponent.framework */; };
+		391978602244B04F006A3BFD /* PropertyListComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3919785E2244B04F006A3BFD /* PropertyListComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		394F21B321DDF445003F1E88 /* BasicPlaybackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */; };
 		394F21B521DDF553003F1E88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 394F21B421DDF553003F1E88 /* README.md */; };
 		394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */; };
 		3953DB441E6B0951007BDD49 /* CollectionView1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3953DB431E6B0951007BDD49 /* CollectionView1ViewController.storyboard */; };
 		3953DB461E6B09D4007BDD49 /* CollectionView1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB451E6B09D4007BDD49 /* CollectionView1ViewController.swift */; };
 		3953DB491E6B0ECB007BDD49 /* CollectionView1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */; };
-		399B04462243E410003B9ED5 /* PropertyListComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 399B04452243E410003B9ED5 /* PropertyListComponentTests.m */; };
 		39A098831DCA3EE200046D54 /* TopMenuListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098821DCA3EE200046D54 /* TopMenuListTests.swift */; };
 		39A098851DCA494100046D54 /* TopMenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A098841DCA494100046D54 /* TopMenuListViewController.swift */; };
 		39B499591DC7922C00EDACB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B499581DC7922C00EDACB2 /* AppDelegate.swift */; };
@@ -32,7 +33,6 @@
 		39BA76C61E968A9B00810E47 /* ZoomingSample1ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA76C51E968A9B00810E47 /* ZoomingSample1ScrollView.swift */; };
 		39BA76CD1E9691F700810E47 /* ZoomingSample1ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */; };
 		39D029121DCCC22300ADAE35 /* TopMenuListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D029111DCCC22300ADAE35 /* TopMenuListTableViewCell.swift */; };
-		39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D029181DCCD17100ADAE35 /* PropertyListComponent.m */; };
 		39D0291D1DCCD88000ADAE35 /* TopMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0291C1DCCD88000ADAE35 /* TopMenuList.m */; };
 /* End PBXBuildFile section */
 
@@ -53,10 +53,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		391978612244B04F006A3BFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				391978602244B04F006A3BFD /* PropertyListComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		390178CC1DCC11870042D29A /* TopMenuListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewDataSource.swift; sourceTree = "<group>"; };
 		390178CE1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewControllerUITableViewDelegate.swift; sourceTree = "<group>"; };
 		390B546B2072BE59009CBD24 /* Verification20180403TempView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Verification20180403TempView.xib; sourceTree = "<group>"; };
+		3919785E2244B04F006A3BFD /* PropertyListComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PropertyListComponent.framework; sourceTree = "<group>"; };
 		394F21B221DDF445003F1E88 /* BasicPlaybackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicPlaybackViewController.storyboard; sourceTree = "<group>"; };
 		394F21B421DDF553003F1E88 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		394F21B621DDF9D8003F1E88 /* BasicPlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +80,6 @@
 		3953DB481E6B0ECB007BDD49 /* CollectionView1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView1Cell.swift; sourceTree = "<group>"; };
 		399310791F17B93900EF33E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		399B04442243E410003B9ED5 /* AppleSDKTipsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleSDKTipsTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		399B04452243E410003B9ED5 /* PropertyListComponentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyListComponentTests.m; sourceTree = "<group>"; };
 		39A098821DCA3EE200046D54 /* TopMenuListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTests.swift; sourceTree = "<group>"; };
 		39A098841DCA494100046D54 /* TopMenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListViewController.swift; sourceTree = "<group>"; };
 		39B499551DC7922C00EDACB2 /* AppleSDKTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSDKTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +102,6 @@
 		39BA76CC1E9691F700810E47 /* ZoomingSample1ScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomingSample1ScrollView.xib; sourceTree = "<group>"; };
 		39D029111DCCC22300ADAE35 /* TopMenuListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuListTableViewCell.swift; sourceTree = "<group>"; };
 		39D029161DCCD17000ADAE35 /* AppleSDKTips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleSDKTips-Bridging-Header.h"; sourceTree = "<group>"; };
-		39D029171DCCD17100ADAE35 /* PropertyListComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListComponent.h; sourceTree = "<group>"; };
-		39D029181DCCD17100ADAE35 /* PropertyListComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListComponent.m; sourceTree = "<group>"; };
 		39D0291B1DCCD88000ADAE35 /* TopMenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuList.h; sourceTree = "<group>"; };
 		39D0291C1DCCD88000ADAE35 /* TopMenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3919785F2244B04F006A3BFD /* PropertyListComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391978632244B069006A3BFD /* WWW */ = {
+			isa = PBXGroup;
+			children = (
+				3919785E2244B04F006A3BFD /* PropertyListComponent.framework */,
+			);
+			path = WWW;
+			sourceTree = "<group>";
+		};
 		3919B1021F17AFBB00E44F0F /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,11 +212,11 @@
 			isa = PBXGroup;
 			children = (
 				391C25AC21D526E000A9A631 /* Application */,
-				39D029131DCCCBA000ADAE35 /* Component */,
 				3919B1021F17AFBB00E44F0F /* DataSource */,
 				3919B1041F17B06200E44F0F /* Domain */,
 				3919B1031F17B03400E44F0F /* Presentation */,
 				39B499861DC7940100EDACB2 /* Resource */,
+				391978632244B069006A3BFD /* WWW */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -284,7 +305,6 @@
 		399B04432243E3CC003B9ED5 /* TechnicalService */ = {
 			isa = PBXGroup;
 			children = (
-				399B04452243E410003B9ED5 /* PropertyListComponentTests.m */,
 				399B04442243E410003B9ED5 /* AppleSDKTipsTests-Bridging-Header.h */,
 			);
 			path = TechnicalService;
@@ -413,15 +433,6 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		39D029131DCCCBA000ADAE35 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				39D029171DCCD17100ADAE35 /* PropertyListComponent.h */,
-				39D029181DCCD17100ADAE35 /* PropertyListComponent.m */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
 		39D0291F1DCD551500ADAE35 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +464,7 @@
 				39B499511DC7922C00EDACB2 /* Sources */,
 				39B499521DC7922C00EDACB2 /* Frameworks */,
 				39B499531DC7922C00EDACB2 /* Resources */,
+				391978612244B04F006A3BFD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -601,7 +613,6 @@
 				390178CF1DCC13820042D29A /* TopMenuListViewControllerUITableViewDelegate.swift in Sources */,
 				39D029121DCCC22300ADAE35 /* TopMenuListTableViewCell.swift in Sources */,
 				394F21B721DDF9D8003F1E88 /* BasicPlaybackViewController.swift in Sources */,
-				39D029191DCCD17100ADAE35 /* PropertyListComponent.m in Sources */,
 				39B4998E1DC7964800EDACB2 /* TopMenuEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,7 +621,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399B04462243E410003B9ED5 /* PropertyListComponentTests.m in Sources */,
 				39A098831DCA3EE200046D54 /* TopMenuListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,6 +789,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCQC4QP985;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppleSDKTips/Framework/WWW",
+				);
 				INFOPLIST_FILE = AppleSDKTips/Framework/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -800,6 +814,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCQC4QP985;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppleSDKTips/Framework/WWW",
+				);
 				INFOPLIST_FILE = AppleSDKTips/Framework/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

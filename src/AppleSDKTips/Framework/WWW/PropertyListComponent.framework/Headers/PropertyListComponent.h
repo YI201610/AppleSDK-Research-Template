@@ -1,7 +1,9 @@
 //
-//  PropertyListComponent.h
-//  AppleSDKTips
+//  PropertyListComponent
 //
+//  Copyright © 2019 YI201610. All rights reserved.
+//
+
 
 #import <Foundation/Foundation.h>
 

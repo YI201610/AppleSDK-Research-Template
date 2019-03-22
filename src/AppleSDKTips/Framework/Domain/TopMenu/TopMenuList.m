@@ -4,7 +4,7 @@
 //
 
 #import "TopMenuList.h"
-#import "PropertyListComponent.h"
+#import <PropertyListComponent/PropertyListComponent.h>
 
 /* Swiftで実装したクラスをObj-Cから使用するための宣言 */
 #import "AppleSDKTips-Swift.h"
