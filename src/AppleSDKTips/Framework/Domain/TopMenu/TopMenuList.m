@@ -37,7 +37,7 @@
             return self;
         }
         
-        NSArray* plist = [PropertyListComponent propertyListArrayWithPlistPath:plistNameString];
+        NSArray* plist = [PropertyListComponent plistWithPath:plistNameString];
         
         [self setupBufferWithSource:plist];
         
