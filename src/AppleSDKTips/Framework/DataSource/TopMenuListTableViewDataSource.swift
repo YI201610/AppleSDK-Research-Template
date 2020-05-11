@@ -54,7 +54,7 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         guard let ref = topMenuListObject else {
-            return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
+            return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
         }
 
         let sectionNo = indexPath.section
@@ -66,11 +66,11 @@ class TopMenuListTableViewDataSource: NSObject, UITableViewDataSource {
 
         var cell = tableView.dequeueReusableCell(withIdentifier: TopMenuListTableViewCell.cellIdentifier())
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
         }
         
         guard let cellRef: TopMenuListTableViewCell = cell as! TopMenuListTableViewCell? else {
-            return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
+            return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: TopMenuListTableViewCell.cellIdentifier())
         }
         cellRef.titleLabel.text = topMenu?.titleString
 
