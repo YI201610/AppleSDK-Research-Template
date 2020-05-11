@@ -16,8 +16,8 @@ class ZoomingSample1ScrollView: UIScrollView {
         self.delegate = self
         
         self.panGestureRecognizer.minimumNumberOfTouches = 1
-        self.panGestureRecognizer.allowedTouchTypes = [UITouchType.direct.rawValue as NSNumber]
-        self.pinchGestureRecognizer?.allowedTouchTypes = [UITouchType.direct.rawValue as NSNumber]
+        self.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
+        self.pinchGestureRecognizer?.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
     }
     
     weak var viewController: UIViewController?

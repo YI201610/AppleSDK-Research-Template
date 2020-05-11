@@ -41,7 +41,7 @@ class BasicPlaybackViewController: UIViewController {
         
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            try audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)))
         }
         catch {
             print("Setting category to AVAudioSessionCategoryPlayback failed.")
@@ -66,4 +66,9 @@ class BasicPlaybackViewController: UIViewController {
         }
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }
