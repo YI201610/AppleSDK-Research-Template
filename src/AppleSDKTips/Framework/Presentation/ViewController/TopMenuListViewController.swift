@@ -19,6 +19,11 @@ class TopMenuListViewController: UIViewController {
     var dataSource: TopMenuListTableViewDataSource?
     
     
+    /// 例外
+    enum TopMenuListError: Error {
+        case menuNotFoundError  //表示するメニューが無い
+    }
+    
     //---------------------------------------------
     // MARK: - Life Cycle
     
@@ -26,7 +31,12 @@ class TopMenuListViewController: UIViewController {
         super.viewDidLoad()
         
         createMenuList()
-        setupTableView()
+        
+        do {
+            try setupTableView()
+        } catch let error as NSError {
+            assert(true, error.description)
+        }
     }
 
     //---------------------------------------------
@@ -44,9 +54,12 @@ class TopMenuListViewController: UIViewController {
         menuList = TopMenuList(plistName: plistPathString())
     }
     
-    private func setupTableView() {
+    
+    /// TableViewを初期化する
+    /// - Throws: メニューが無かった場合、エラーを発行する
+    private func setupTableView() throws {
         guard let sourceObject = menuList else {
-            assert(false, "TopMenuListが作成できません")
+            throw TopMenuListError.menuNotFoundError
         }
         dataSource = TopMenuListTableViewDataSource(source: sourceObject)
         tableView.dataSource = dataSource
